@@ -1,0 +1,30 @@
+---
+layout: default
+title: Home
+navigation:
+  order: 1
+author: Julian Hartline
+---
+
+
+<p>
+	<span class="tagline">The Reflowster turns your standard toaster oven into an easy-to-use reflow soldering oven without breaking the bank.</span>
+</p>
+
+<p>
+	Hobbyists interested in taking their projects to the next level with reflow soldering typically face the problem of finding an affordable
+	solution. Commercially available reflow ovens are often prohibitively expensive as they are typically marketed for industrial soldering.
+</p>
+
+<br/>
+<br/>
+<span class="tagline">News</span>
+{% for post in site.posts %}
+	{% if post.categories contains 'news' %}
+		<h2>{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></h2>
+		{{ post.excerpt }}
+		<a href="{{ post.url }}">read more..</a>
+		<br/>
+		<br/>
+	{% endif %}
+{% endfor %}

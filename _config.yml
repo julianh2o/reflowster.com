@@ -1,0 +1,8 @@
+name: Reflowster
+titletagline: The reflow soldering oven for hobbyists
+markdown: redcarpet
+kickstarterurl: https://www.kickstarter.com
+pygments: true
+exclude: [misc_unused]
+gems: [jekyll-navigation]
+excerpt_separator: <!--more-->
