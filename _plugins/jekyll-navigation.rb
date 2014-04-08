@@ -1,6 +1,6 @@
-require "jekyll-navigation/version"
-require "jekyll-navigation/navigation_item"
-require "jekyll-navigation/navigation"
+require_relative "jekyll-navigation/version"
+require_relative "jekyll-navigation/navigation_item"
+require_relative "jekyll-navigation/navigation"
 require "liquid"
 
 module JekyllNavigation
