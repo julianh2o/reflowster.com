@@ -2,7 +2,7 @@
 layout: default
 title: About Us
 navigation:
-  order: 4
+  order: 6
 author: Julian Hartline
 ---
 
