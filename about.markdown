@@ -6,7 +6,7 @@ navigation:
 author: Julian Hartline
 ---
 
-<img class="showcase" src="/resources/images/us.jpg" />
+<img class="showcase" src="/resources/images/us.png" />
 
 **Julian Hartline** (left) has a degree in Computer Science and has been programming for 17 years, 5 of which have been in the industry. He specializes in designing and building robust APIs and sleek and intuitive user interfaces. He's been heavily involved in the hardware and PCB design scene for the last 2 years as a hobbyist. He has been doing the bulk of the programming and has been taking charge of getting the first drafts of the PCBs ready for Tony to review. He is also responsible for keeping track of deadlines and outstanding items to keep the team on track.
 
