@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Reflowster
+title: Features
 navigation:
-  order: 3
+  order: 4
 author: Julian Hartline
 ---
 
