@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Affordable custom PCBs for DIY"
+categories: news
+---
+
+Reflowster is great for soldering parts to a PCB, but where do you get the PCB itself? You can etch your own board using caustic chemicals, but we've found that it's easy to buy high quality custom PCB boards without breaking the bank.
+
+<!--more-->
+
+We use [SeeedStuido's Fusion PCB service](http://www.seeedstudio.com/service/index.php?r=site/pcbService). They accept Gerber files and send you finished boards. Their prices are impossible to argue with:
+
+Quantity 10 PCBs 5cm x 5cm for $9.90
+Quantity 10 PCBs 10cm x 10cm for $24.90
+
+The above prices are for 2 layer boards, with solder mask and silkscreen on both sides, and minimum feature size of 6mils. There are other options but this standard one will serve most DIY needs and costs the least. Their prices are all fixed so you can get an instant quote, up to 100 boards, right from their site. Trust us when we say you'll appreciate the finished look, ease of assembly, and durability of a custom printed PCB.
+
+Add in $5 for shipping and you've just gotten yourself some high quality PCBs that are ready for soldering parts to.
+
+All the PCBs in this image are from SeeedStuido.
+<img class="showcase" src="/resources/images/pcbs.jpg">
+
+There are other services as well that offer some competitively priced PCBs, but SeeedStuido has been our go-to from the beginning and it's always been a good experience.
