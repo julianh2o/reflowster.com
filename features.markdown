@@ -2,7 +2,7 @@
 layout: default
 title: Features
 navigation:
-  order: 4
+  order: 3
 author: Julian Hartline
 ---
 

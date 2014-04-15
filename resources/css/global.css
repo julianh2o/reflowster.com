@@ -15,6 +15,10 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
 }
 
+.kickstarter-widget {
+    text-align: center;
+}
+
 .pageHeader img {
     position: relative;
     top: 2px;
