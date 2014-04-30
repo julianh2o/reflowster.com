@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Reflowster is funded!"
+categories: news
+---
+
+Thanks to all of our backers for making our Kickstarter campaign such a huge success. In just 28 days,
+we managed to reach $15,674, almost 157% of our original goal with a grand total of 192 backers.
+Not only did we get our funding, we've gotten valuable feedback from our backers throughout the campaign and ended the campaign with a significantly
+redesigned vision for Reflowster.
+
+<!--more-->
+
+We're already well underway with a new prototype in the mail. As soon as it arrives, we'll be assembling it and testing it before moving on to either
+another revision or our certification process. Concurrently, we'll be working out the details of the custom machining and printing of our enclosure.
+
+If you missed the Kickstarter and want a Reflowster, be sure to subscribe to our mailing list to be notified when Reflowster is available for orders.

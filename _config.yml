@@ -4,5 +4,6 @@ markdown: redcarpet
 kickstarterurl: https://www.kickstarter.com/projects/reflowster/reflowster-soldering-controller-for-surface-mount
 pygments: true
 exclude: [tasks, misc_unused]
+include: [.htaccess]
 #gems: [jekyll-navigation]
 excerpt_separator: <!--more-->

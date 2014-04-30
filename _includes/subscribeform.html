@@ -1,0 +1,32 @@
+<div class="email_subscription">
+	<b>Subscribe for email updates!</b>
+    <div class="email_overlay">Thank you for subscribing!</div>
+    <input type="email" id="email_form" /> <br/>
+    <label><input type="radio" id="email_updates" name="update_type">Send me all updates</label><br/>
+    <label><input type="radio" id="email_order" name="update_type">Contact me when Reflowster is ready to order</label><br/>
+    <button id="email_button">Subscribe</button>
+</div>
+
+<script type="text/javascript">
+    (function() {
+        var $email_field = $("#email_form");
+        var $update_radio = $("#email_updates");
+        var $order_radio = $("#email_order");
+        var $button = $("#email_button");
+        $button.click(function() {
+            var email = $email_field.val();
+            var update = $update_radio.is(":checked");
+            var order = $order_radio.is(":checked");
+            var type = "none";
+            if (update) type = "update";
+            if (order) type = "order";
+            $.post("/subscribe.php",{email:email,type:type})
+                .done(function() {
+                    $(".email_overlay").fadeIn(1000);
+                })
+                .fail(function() {
+                	alert("Failed to subscribe to mailing list, please check your email address or contact us");
+                });
+        });
+    })();
+</script>

@@ -1,0 +1,11 @@
+<ul class="nav nav-pills">
+	{% navigation root %}
+</ul>
+
+{% if_navigation sub %}
+	<div class="row">
+		<ul class="nav nav-pills">
+		{% navigation sub %}
+		</ul>
+	</div>
+{% endif_navigation %}

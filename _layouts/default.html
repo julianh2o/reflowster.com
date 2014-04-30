@@ -9,6 +9,8 @@
 
         <link rel="stylesheet" href="/resources/reset.css">
         
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        
         <!-- Bootstrap -->
         <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css">
         <script type="text/javascript" src="/resources/bootstrap/js/bootstrap.min.js"></script>
@@ -25,6 +27,7 @@
 			<div class="container">
 			    <div class="row">
 			        <div class="col-md-9">
+				    	{% include navigation.html %}
 			        	{{ content }}
 					</div>
 			        <div class="col-md-3">

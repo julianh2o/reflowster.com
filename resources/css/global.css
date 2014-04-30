@@ -106,3 +106,49 @@ h2 {
     height: 300px;
 }
 
+/* email subscription form */
+
+#email_form {
+	width: 100%;
+}
+
+#email_button {
+	float: right;
+}
+
+.email_subscription {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.email_subscription label {
+	font-weight: normal;
+	font-size: 11px;
+}
+
+.email_subscription input[type='radio'] {
+	position: relative;
+	top: 3px;
+	left: -1px;
+}
+
+.email_overlay {
+	z-index: 100;
+    display: none;
+    position: absolute;
+    background: white;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    border: 2px solid green;
+    padding: 20px 5px;
+}
+
+
