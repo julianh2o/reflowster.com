@@ -14,6 +14,10 @@ module JekyllNavigation
       fetch_navigation_property('parent') { nil }
     end
 
+    def link
+      fetch_navigation_property('link') { nil }
+    end
+
     def order
       fetch_navigation_property('order') { -1 }
     end

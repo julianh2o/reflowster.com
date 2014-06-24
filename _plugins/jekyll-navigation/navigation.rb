@@ -6,9 +6,10 @@ module JekyllNavigation
 
     def render
       pages.map do |page|
+        url = page.link || page["url"]
         css = (current_page["url"] == page["url"] ||
                current_page.parent == page["url"]) ? " class='active'" : ""
-        %Q{<li#{css}><a href="#{page["url"]}">#{page.title}</a></li>}
+        %Q{<li#{css}><a href="#{url}">#{page.title}</a></li>}
       end.join("\n")
     end
 
