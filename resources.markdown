@@ -12,6 +12,6 @@ Resources
 <ul>
 <li><a href="reflowsterresources/manual.pdf">Reflowster Manual</a>
 <li><a href="reflowsterresources/reflowsolderingguide.html">Reflow Soldering Guide</a>
-<li><a href="https://github.com/Reflowster">Github Organization</a>
+<li><a href="https://github.com/Reflowster">Reflowster Github Organization</a>
 
 
