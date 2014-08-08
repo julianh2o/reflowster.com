@@ -145,8 +145,9 @@ In order to get the required libraries, you'll first need to locate your Arduino
 
 Note: If a "libraries" folder does not exist inside your sketchbook, you can safely create one and install your libraries into it.
 
-If you are running a bash-capable environment, you can use our script to automatically download these libraries to your libraries folder.
-TODO: add bash command to download and run script
+If you are running a bash-capable environment, you can use our <a href="/reflowsterresources/downloadlibraries.sh">script</a> to automatically download these libraries to your libraries folder using this command:
+
+<tt>wget http://reflowster.com/reflowsterresources/downloadlibraries.sh -O - | bash</tt>
 
 <b>The required libraries that are downloaded by the script are as follows:</b>
 <a href="https://github.com/adafruit/Adafruit_NeoPixel">Adafruit's Neopixel Library</a> - This library is used to drive the multi-color status LED on Reflowster.
