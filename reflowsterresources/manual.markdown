@@ -150,6 +150,7 @@ If you are running a bash-capable environment, you can use our <a href="/reflows
 <tt>wget http://reflowster.com/reflowsterresources/downloadlibraries.sh -O - | bash</tt>
 
 <b>The required libraries that are downloaded by the script are as follows:</b>
+
 <a href="https://github.com/adafruit/Adafruit_NeoPixel">Adafruit's Neopixel Library</a> - This library is used to drive the multi-color status LED on Reflowster.
 
 <a href="https://github.com/adafruit/Adafruit-MAX31855-library">Adafruit's MAX31855 Library</a> - This library is used to read the data from the MAX31855 thermocouple driver.
