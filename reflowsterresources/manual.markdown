@@ -149,6 +149,10 @@ If you are running a bash-capable environment, you can use our <a href="/reflows
 
 <tt>wget http://reflowster.com/reflowsterresources/downloadlibraries.sh -O - | bash</tt>
 
+or (if you don't have wget, with curl)
+
+<tt>curl http://reflowster.com/reflowsterresources/downloadlibraries.sh | bash</tt>
+
 <b>The required libraries that are downloaded by the script are as follows:</b>
 
 <a href="https://github.com/adafruit/Adafruit_NeoPixel">Adafruit's Neopixel Library</a> - This library is used to drive the multi-color status LED on Reflowster.
