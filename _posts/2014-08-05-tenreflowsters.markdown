@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ten Reflwosters"
+title:  "Ten Reflowsters"
 categories: news
 ---
 
