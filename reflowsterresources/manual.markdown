@@ -49,6 +49,12 @@ power to the toaster oven and let the PCB soak for the configured duration.
 
 <b>Peak Temperature</b> - After the soak duration, Reflowster turns the toaster oven back on until the peak temperature is reached. At this point, Reflowster will turn off the oven again for the cooling phase. The door to the oven should be opened manually at this point.
 
+The default leaded profile uses a 130C soak for 90 seconds with a peak temperature of 225C.
+
+The default unleaded profile uses a 140C soak temperature for 90 seconds with a 235C peak temperature.
+
+We highly recommend that you tinker with these values yourself in order to get the best soldering results. While we haven't changed the temperature or duration of the soak very much in our projects, we have found that watching the solder paste as it reaches the peak temperature and flashes silver helps adjust the peak temperature. Adjust the peak temperature such that the oven shuts off a few seconds after the solder paste has flashed silver AND the components have stopped moving into place.
+
 <b>Updating a profile property</b>
 First, select the property you’d like to edit by twisting the knob until the desired property is displayed. Push the knob in to confirm your selection.
 
@@ -86,7 +92,7 @@ Once configured, Reflowster will attempt to hold the supplied temperature inside
 
 Controlling Reflowster via USB
 ==========================================
-Reflowster has a powerful serial interface that allows you to send commands and read status. This serial interface runs at 9600 baud and can be connected to via USB and a simple serial interface.
+Reflowster has a powerful serial interface that allows you to send commands and read status. This serial interface runs at 9600 baud and can be connected to via the USB port on the right side of Reflowster and a simple serial interface. To connect Reflowster to a computer, you will need a standard micro USB cable similar to the ones used by many modern smart phones. Note that this is distinct from a mini USB cable that is also widely used for connecting to Arduino boards.
 
 <span class="note">Note: If you have set up the Arduino IDE for use with Reflowster, you can simply use the "Serial Monitor" feature under the tools menu.</span>
 
@@ -114,9 +120,12 @@ Reflowster has a powerful serial interface that allows you to send commands and 
 <tt>stop</tt>
 (reflow) - Stops the reflow process
 
+In addition to accepting commands, Reflowster will, when running a reflow job and when in monitor mode will report temperature data via the serial interface.
 
 Checking and updating your Reflowster’s firmware version
 ========================================================
+In order to update your firmware, you will need to connect your Reflowster to a computer using a micro USB cable. Not to be confused with a mini USB cable, micro USB cables come with many modern smart phones and are available online and in many consumer electronics stores.
+
 The first step to updating your firmware is to verify the version of firmware you are running against the most recent version of the firmware available.
 
 Reflowster displays the firmware version as it starts up. You will see the segments in the LED display light up in a spiral pattern and then the version number will be displayed momentarily before you are greeted with the “Go” from the main menu.
@@ -134,6 +143,8 @@ In order to update your Reflowster firmware or to upload custom firmware, you wi
 Setting up the Arduino IDE
 --------------------------
 First download and install the <a href="http://arduino.cc/en/main/software">Arduino IDE</a> from the Arduino website using the instructions provided.
+
+In some cases, you may need to install a USB driver to get your Reflowster to show up in the serial port menu. You'll find more information about this driver in the <a href="http://arduino.cc/en/Guide/ArduinoLeonardoMicro?from=Guide.ArduinoLeonardo">Arduino Leonardo guide</a>.
 
 Connect your Reflowster via USB and verify that it shows up under Tools &gt; Serial Port menu. The easiest way to do this is to check the menu while Reflowster isn’t plugged in and then check the menu when it is plugged in to verify that a new port shows up. (Note: The menu only updates if you close out of the entire menu; holding the menu open as you plug/unplug your Reflowster will not work)
 
@@ -158,6 +169,8 @@ or (if you don't have wget, with curl)
 <a href="https://github.com/adafruit/Adafruit_NeoPixel">Adafruit's Neopixel Library</a> - This library is used to drive the multi-color status LED on Reflowster.
 
 <a href="https://github.com/adafruit/Adafruit-MAX31855-library">Adafruit's MAX31855 Library</a> - This library is used to read the data from the MAX31855 thermocouple driver.
+
+<span class="note">Note: The MAX31855 library from Adafruit needs to be renamed after being downloaded as the Arduino IDE does not honor hyphens as a valid character in a library name. We suggest swapping them out for underscores. (the script will do this automatically)</span>
 
 <a href="http://www.pjrc.com/teensy/arduino_libraries/Encoder.zip">Encoder Library</a> - This library handles interrupt-driven encoder updates.
 
