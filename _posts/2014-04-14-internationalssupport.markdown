@@ -9,6 +9,8 @@ It’s been a busy week here for us and while we don’t have anything set in st
 
 As you probably know, our original design ran using a fixed linear power supply and would only support 120V AC. We’re currently in the process of investigating changing our power supply to a switching power supply that will support both 120V and 240V. This will not affect our backers in the US, but our international backers may find this to be crucial to their backing decision. If we end up making the switch for the final version, Reflowster will be compatible with international voltages.
 
+<!--more-->
+
 If you’ve been following our updates, you probably already know that we’ve been considering moving away from the wall-wart design of the Reflowster in our video. The feedback that we’ve gotten has been pretty positive so far and we’re definitely leaning toward that as an option. In addition to switching to a box with cords design, we’re considering using IEC-C13 and IEC-C14 plugs on Reflowster and bundling a set of cables. IEC-C13/C14 are the standard plugs that most computer power supplies and monitors use.
 <img class="showcase" src="/resources/images/updates/update_04_14_2014_1.jpg">
 

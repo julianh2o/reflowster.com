@@ -8,10 +8,12 @@ categories: news
 All of the PCBs and parts arrived earlier last week and we started the first assembly of the new version of Reflowster. As expected, the first assembly revealed a few minor bugs in the circuit board but nothing that we weren't able to easily update for the next version and install minor work-arounds to remedy.
 <img class="showcase" src="/resources/images/updates/update_05_13_2014_1.jpg">
 
+<!--more-->
+
 By the end of our first day of working with the new design, we were pleased to find that our switching power supply worked exactly as expected and gave us the 5v that we expected. Building it out has given us a few ideas for minor improvements that we'll implement for the next version.
 
 
-<video width="320" height="240" controls="">
+<video class="showcase" width="80%" controls>
     <source src="/resources/video/reflowster_150_firstlook_small.m4v" type="video/mp4">
 Your browser does not support the video tag.
 </video>

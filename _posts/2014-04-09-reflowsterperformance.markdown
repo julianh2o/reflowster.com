@@ -8,6 +8,8 @@ categories: news
 We've had some questions about what kind of performance you can expect from your Reflowster. There's a lot of experimentation left to do, but take at look at this plot that we collected yesterday.
 <img class="showcase" src="/resources/images/updates/update_04_09_2014_1.jpg">
 
+<!--more-->
+
 This temperature profile was collected with a thermocouple attached to the subject PCB using a paperclip. We've also tried a similar profile using a thermocouple hanging in free space. We're not sure which setup is going to produce better overall results, but we expect that it might depend somewhat on your exact application etc. We're going to ship Reflowster with two pre-programmed profiles and space for multiple custom profiles, so you'll be able to tinker with the settings even without touching the firmware.
 
 Another question we've has is about how well Reflowster can hold a specific temperature. This question is somewhat complicated depending on what exactly you're trying to control, what your target temperature is, how long you want to hold it, etc, but we'll try to answer it anyway.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Parts are ordered in quantity and we&#39;re closing down on our final design"
+title:  "Parts are ordered in quantity and we're closing down on our final design"
 categories: news
 ---
 
@@ -10,6 +10,7 @@ Hello all,
 It's been a busy month, so we wanted to let you know what's been happening. Basically we've been testing everything to make sure it works, putting some finishing touches on the design, and buying all the parts we need to build all your Reflowsters. Let's start off with a progress picture:
 <img class="showcase" src="/resources/images/updates/update_06_23_2014_1.jpg">
 
+<!--more-->
 
 From left to right, the guts of Reflowster over time. Look how the quality and complexity improved after the Kickstarter, thanks to your support! The other thing to notice is that the last two boards look *very* similar. This is because we think the design is pretty solid, and from here on out we're making very small changes. There is a "June" PCB that is in design right now that incorporates everything we learned from the April and May boards.
 

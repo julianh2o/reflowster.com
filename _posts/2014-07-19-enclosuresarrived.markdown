@@ -8,6 +8,8 @@ categories: news
 The cases have arrived and our circuit board fits perfectly. Here is the box of ABS enclosures that showed up on my doorstep the other day.
 <img class="showcase" src="/resources/images/updates/update_07_19_2014_1.jpg">
 
+<!--more-->
+
  Despite the fact that we carefully planned, checked, and double checked all of our measurements, we were quite relieved when the circuit board fit perfectly into the case.
 <img class="showcase" src="/resources/images/updates/update_07_19_2014_2.jpg">
 <img class="showcase" src="/resources/images/updates/update_07_19_2014_3.jpg">

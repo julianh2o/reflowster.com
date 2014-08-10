@@ -10,7 +10,7 @@ The status LED works like a charm! We've whipped up a simple demo of the LED cha
 
 <!--more-->
 
-<video width="320" height="240" controls>
+<video class="showcase" width="80%" controls>
     <source src="/resources/video/LEDvideosmall.m4v" type="video/mp4">
 Your browser does not support the video tag.
 </video>

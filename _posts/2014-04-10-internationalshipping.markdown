@@ -9,6 +9,8 @@ categories: news
 
 We've added a new backing level! We've had a number of people interested in having Reflowster shipped to Canada. We've done our due diligence and figured out exactly what it will take and have added a new option for shipping around the world.
 
+<!--more-->
+
 Remember, Reflowster isn't compatible with international outlets so if you're taking advantage of our international shipping, you may need provide your own means of adapting Reflowster to your outlets. (Reflowster should work fine in Canada because we use the same outlet)
 
 <b>Potential Enclosure Change</b>
