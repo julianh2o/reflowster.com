@@ -20,6 +20,8 @@ Main Menu
 =========
 The main menu comes up when the device is started. To get back to it from any other menus, press the back button to move up to enclosing menus until the main menu displays.
 
+<img class="showcase" src="mmap.png" />
+
 <b>Go</b>
 This will start the reflow process using the currently selected profile.
 
