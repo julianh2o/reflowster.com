@@ -8,6 +8,19 @@ navigation:
 
 Quick Start Guide
 =================
+The first step after unpacking your Reflowster is to get your thermocouple situated on the inside of your toaster oven. To do this, you'll want to slip the thermocouple probe into the underside of the oven and then affix the tip using a paper clip as close to your PCB as possible.
+
+Once the thermocouple is set, plug Reflowster into the wall and your toaster oven into Reflowster. Plug the thermocouple in as well and double check that all of the connections are solid. In particular, the power connectors into Reflowster often catch before they are completely seated. To complete the setup, set your toaster oven to the "untimed bake" option and set the temperature to maximum. This mode is often attained by turning the timer knob backwards so that it doesn't count down.
+
+When powered, Reflowster will perform a start up routine and then settle on the text "go" displayed on the screen. This is the main menu. Before running a reflow, you'll want to double check the temperature settings of your Reflowster. Do this by scrolling the knob until "edit" is displayed, then press the knob in.
+
+The resulting menu is the edit profile menu. See the section detailing it for more information, but scroll through the different properties with the knob and press the button in to view/edit the value. There are three settings in order: Soak Temperature, Soak Duration, and Peak Temperature. You can adjust each one according to your solder paste, but we suggest a base set of 100C, 90s, and 225C respectively if you are unsure.
+
+Once you've configured these values, press the back button (the smaller button on the right) until you are returned to the main menu. If "go" is not displayed, rotate the knob until it is.
+
+To start the reflow process, press the knob in when "go" is displayed. Your toaster oven should turn on and Reflowster will display the current temperature inside the oven.
+
+When the reflow process is complete, a tone will sound and the status LED will turn blue. Open the oven door at this point to rapidly cool your PCB.
 
 Setting up your Reflowster
 ==========================
@@ -19,6 +32,10 @@ Once the probe is inside the oven, you can position the probe in a way that give
 
 Once the thermocouple is positioned, plug Reflowster into the wall and your toaster oven into Reflowster using the included IEC cables. Finally, set your toaster oven to continuous on mode. Often this is done by turning the timer knob backwards slightly.
 
+Reflowster Anatomy
+==================
+<img class="showcase" src="reflowmanual/annotated_reflowster_basic.png" />
+
 Main Menu
 =========
 The main menu comes up when the device is started. To get back to it from any other menus, press the back button to move up to enclosing menus until the main menu displays.
@@ -27,7 +44,7 @@ The main menu comes up when the device is started. To get back to it from any ot
 
 <img class="display_header" src="reflowmanual/go.png" />
 <b>Go</b>
-This will start the reflow process using the currently selected profile.
+This will start the reflow process using the currently selected profile. Press the knob in while this is displaying to start the process and open the toaster oven when the status indicator turns blue and a tone is generated.
 
 <img class="display_header" src="reflowmanual/edit.png" />
 <b>Edit Profile</b>
