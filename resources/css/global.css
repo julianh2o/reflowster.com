@@ -123,6 +123,12 @@ h2 {
     height: 300px;
 }
 
+.display_header {
+    vertical-align: bottom;
+    margin: 5px 5px 5px 0;
+    height: 20px;
+}
+
 /* email subscription form */
 
 #email_form {
