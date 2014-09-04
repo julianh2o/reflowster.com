@@ -230,3 +230,51 @@ If you prefer to start with something more lightweight, you can use the example 
 Test your setup by uploading new firmware
 -----------------------------------------
 After you've restarted your IDE, you'll be able to compile and upload the version of the Reflowster firmware that you just downloaded. Open the Reflowster_Reflow.ino file wherever you downloaded it to in the previous step. Once open, verify that your Reflowster is connected via USB and that it shows up under the Tools &gt; Serial Port menu. Lastly, be sure that Arduino Leonardo is selected under Tools &gt; Board. Click upload (a circular icon with an arrow) in your open window. If all goes well, you'll be greeted shortly with a confirmation message and Reflowster will reboot with the new firmware.
+
+Troubleshooting
+===============
+
+When pushing the knob in on "go" to start the reflow process, Reflowster displays "err"
+---------------------------------------------------------------------------------------
+This message means that the thermocouple is not being read properly. If the thermocouple is not plugged in, plug it in. If it is plugged in, try tightening the thermocouple or reinserting it.
+
+
+When Reflowster powers on, the display lights up solidly and the main menu doesn't appear
+---------------------------------------------------------------------------------------
+It's possible that Reflowster has somehow gotten itself into self-test mode. In order to get out of self-test mode, you'll need to go through the self-test process. Press the knob in when this is displayed, then press the back button when "bck" is displayed. Continue pressing the knob in until "go" is displayed.
+
+
+When the reflow process starts, the temperature is displayed, but the oven doesn't turn on
+---------------------------------------------------------------------------------------
+In this case, it is likely that your oven needs to be set into "always on" mode. Typically this is done by turning the timer knob backwards until it stops counting. If your toaster oven is too fancy, it may not have an option to force it on.
+
+
+The reflow process completes, but the solder hasn't melted or turned silver
+---------------------------------------------------------------------------------------
+This probably means that you need to increase the peak temperature of your reflow profile. You'll do this by going to "edit" in the main menu and then selecting "peak temperature".
+
+
+Reflowster does not show up in the Arduino "ports" menu when it is connected via USB
+---------------------------------------------------------------------------------------
+It's possible that your drivers are not installed correctly, follow the instructions on <a href="http://arduino.cc/en/Guide/ArduinoLeonardoMicro?from=Guide.ArduinoLeonardo#toc8">how to install drivers for the Arduino Leonardo.</a>
+
+
+When building the Reflowster code, an error appears similar to "'Reflowster' does not name a type" or "Reflowster.h: No such file or directory"
+---------------------------------------------------------------------------------------
+You may be missing the Reflowster library. You'll want to use git to clone the <a href="https://github.com/Reflowster/Reflowster">Reflowster library</a> from Github into your libraries folder.
+
+
+When building the Reflowster code, an error appears similar to "error: ISO C++ forbids declaration of 'Encoder' with no type"
+---------------------------------------------------------------------------------------
+You may be missing the <a href="http://www.pjrc.com/teensy/arduino_libraries/Encoder.zip">Encoder library</a>. You'll need to download it and unzip it to your libraries folder.
+
+
+When building the Reflowster code, an error appears similar to "error: invalid use of incomplete type 'struct Adafruit_MAX31855'"
+---------------------------------------------------------------------------------------
+You may be missing the <a href="https://github.com/adafruit/Adafruit-MAX31855-library">Adafruid MAX31855 library</a>. You'll need to clone it from Github into your libraries folder. Alternatively, the library may be named incorrectly. Hyphens are invalid characters, you'll want to replace them with underscores.
+
+
+When building the Reflowster code, an error appears similar to "error: ISO C++ forbids declaration of 'Adafruit_NeoPixel' with no type"
+---------------------------------------------------------------------------------------
+You may be missing the <a href="https://github.com/adafruit/Adafruit_NeoPixel">Adafruid Neopixel library</a>. You'll need to clone it from Github into your libraries folder.
+
