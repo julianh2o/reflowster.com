@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Features
+description: Reflowster controls the power to the oven using a relay and a thermocouple. A knob and button UI and USB programming port can be used to configure the reflow.
 navigation:
   order: 3
 author: Julian Hartline

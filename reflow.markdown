@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Reflow Soldering
+description: As components get smaller, hobbyists are being driven toward surface mount parts and reflow soldering a process that solders an entire PCB at once using a reflow oven.
 navigation:
   order: 2
 author: Julian Hartline

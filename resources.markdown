@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Resources
+description: Here you'll find a list of resources for working with Reflowster including manuals and guides as well as links to some of the design files and code.
 navigation:
   order: 8
 author: Julian Hartline

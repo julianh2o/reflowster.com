@@ -1,9 +1,8 @@
-
 ---
 layout: default
-title: About Us
+title: Toaster Oven Compatibility
 navigation:
-  order: 5
+  order: 6
 author: Julian Hartline
 ---
 

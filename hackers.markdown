@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Hackability
+description: Reflowster is entirely re-programmable and compatible with the Arduino IDE so you can perfect your reflow soldering or re-purpose Reflowster entirely.
 navigation:
   order: 4
 author: Julian Hartline

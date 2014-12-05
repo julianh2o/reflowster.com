@@ -1,8 +1,9 @@
 ---
 layout: default
 title: About us
+description: Reflowster was designed by Julian Hartline and Tony Halstead, in what has been an extremely fruitful collaboration between software and hardware expertise.
 navigation:
-  order: 6
+  order: 7
 author: Julian Hartline
 ---
 

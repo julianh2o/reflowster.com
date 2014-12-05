@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Reflow Soldering Guide
+description: This guide is aimed at getting you quickly started with SMT and reflow soldering at home. It contains step by step instructions and useful tips and tricks.
 author: Julian Hartline
 navigation:
     exclude: true
