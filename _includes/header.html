@@ -1,43 +1,25 @@
 <header class="pageHeader">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <a href="/">
-                    <img src="/resources/images/reflowster_logo_text_transparent.svg" />
-                </a>
+            <div class="col-md-12">
+            	<div class="header-logo">
+	                <a href="/">
+	                    <img src="/resources/images/reflowster_logo_text_transparent.svg" />
+	                </a>
+                </div>
+               	<div class="header-nav">
+		            {% include navigation.html %}
+		            <a href="http://store.reflowster.com/products/reflowster" class="preorder">Pre-order Now</a>
+	            </div>
             </div>
         </div>
-		{% include navigation.html %}
     </div>
 </header>
 
-<!--
-<section class="splash">
-    <div class="container">
-        <div class="image_block">
-            <span>Upload your own firmware using the Arduino IDE</span>
-            <img src="/resources/images/header/arduino_ide.png"/>
-        </div>
-        <div class="image_block">
-            <span>Easy to use, no toaster modification required</span>
-            <img src="/resources/images/header/pluggedin.jpg"/>
-        </div>
-        <div class="image_block">
-            <span>All source code and designs are open source and available to the community</span>
-            <img src="/resources/images/header/reflow_200.png"/>
-        </div>
-        <div class="image_block">
-            <span>Included thermocouple reads the temperature inside the oven and displays it</span>
-            <img src="/resources/images/header/reflow_closeup.jpg"/>
-        </div>
-        <div class="image_block">
-            <span>Integrated design takes power from AC and uses a relay to control the outlet</span>
-            <img src="/resources/images/header/reflowster_3d_closeup.png"/>
-        </div>
-        <div class="image_block">
-            <span>Comes pre-programmed with standard soldering profiles and supports custom profiles</span>
-            <img src="/resources/images/header/temperature_profile.png"/>
-        </div>
-    </div>
-</section>
--->
+<div class="splash">
+	<div class="text-over">
+		Plug in to transform your toaster oven into an automated reflow soldering station.
+		<span>No need to break the bank on a commercial reflow oven or hack high-voltage wiring</span>
+		<span class="preorderlink">Now available for <a href="http://store.reflowster.com/products/reflowster">pre-order on our store!</a></span>
+	</div>
+</div>

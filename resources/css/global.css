@@ -10,12 +10,24 @@
 }
 
 .pageHeader .nav {
-	margin-top: 15px;
+	margin-top: 6px;
+}
+
+#mc_embed_signup{
+	background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
+}
+
+body #mc_embed_signup .button {
+	font-weight: bold;
+	height: 21px;
+	line-height: 21px;
+	margin: -2px 0px -4px 0;
+	padding: 0px 8px;
 }
 
 .pageHeader .nav-pills > li > a {
 	color: #999;
-	background: white;
+	background: none;
 }
 
 .pageHeader .nav-pills > li {
@@ -24,12 +36,12 @@
 
 .pageHeader .nav-pills > li > a:hover {
 	color: white;
-	background: #75ABD9;
+	background: none;
 }
 
 .pageHeader .nav-pills > li.active > a {
 	color: white;
-	background: #428bca;
+	background: none; 
 }
 
 .kickstarter-widget {
@@ -39,7 +51,7 @@
 .pageHeader img {
     position: relative;
     top: 2px;
-    height: 80px;
+    height: 55px;
 }
 
 .nounderline:hover {
@@ -59,12 +71,67 @@ h2 {
 	overflow: hidden;
     left: 0px;
     right: 0px;
-    background-image: url('/resources/images/header/tessalate_pcb.png');
-    height: 185px;
+    background-image: url('/resources/images/reflowster_splash.jpg');
+    height: 400px;
     
     margin: 0;
     margin-bottom: 20px;
     text-align: center;
+    position:relative;
+}
+
+.text-over {
+	font-size: 20px;
+	background: rgba(0,0,0,0.8);
+	color: white;
+	border-radius: 10px;
+	width: 550px;
+	position: absolute;
+	padding: 20px;
+	top: 100px;
+	left: 100px;
+	text-align: left;
+}
+
+.text-over span {
+	display: block;
+	font-size: 17px;
+	color: #999;
+}
+
+.text-over .preorderlink {
+	text-align: right;
+}
+
+.header-logo {
+	float: left;	
+}
+
+.header-nav {
+	float: right;	
+}
+
+.pageHeader .nav.nav-pills {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.preorder {
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+	padding: 4px 10px;
+	background-color: #428bca;
+	color: white;
+	position: relative;
+	top: 4px;
+	text-decoration: none;
+}
+
+.preorder:hover {
+	background-color: #356FA2;
+	text-decoration: none;
+	color: white;
 }
 
 .body {
