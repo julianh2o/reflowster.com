@@ -59,12 +59,13 @@ body #mc_embed_signup .button {
 }
 
 h2 {
+	color: white;
+	background: #428bca;
 	font-size: 1.3em;
 	font-weight: bold;
 	display: block;
-	border: 1px solid black;
 	border-radius: 5px;
-	padding: 3px;
+	padding: 5px;
 }
 
 .splash {
@@ -187,7 +188,8 @@ h2 {
 .showcase {
     display: block;
     margin: 5px auto;
-    height: 300px;
+    max-height: 300px;
+    max-width: 100%;
 }
 
 .display_header {
