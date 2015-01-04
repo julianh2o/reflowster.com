@@ -6,13 +6,13 @@ author: julian
 categories: disabled
 ---
 
-Powering a hobby project can be somewhat of a project in itself. Most digital circuits require a power supply capable of providing 3 to 6 volts DC. Your projects may have requirements beyond the voltage and power such as portability, or very low power consumption. As a hobbyist, it is extremely helpful to have a variety of power supplies in your repetoire so that when your next project has a unique need, you have a unique solution to suit it.
+Powering a hobby project can often be a project in itself. Most digital circuits require a power supply capable of providing 3 to 6 volts DC. Your projects may have requirements beyond the voltage and power such as portability, or very low power consumption. As a hobbyist, it is extremely helpful to have a variety of power supplies in your repertoire so that you can quickly and easily spin up projects with a diverse set of requirements.
 
 <!--more-->
 
-The following methods of powering your project are by no means exhaustive and in all likelyhood, you'll want to mix and match to suit your specific needs. I've ordered these in roughly acending order with respect to how difficult or complicated they are to implement and use. In part I, I'll cover some basic and common methods that will get your project up and running quickly. In part II, I'll cover some more advanced techniques that may offer a particular type of utility that fits well with some of your projects.
+The following methods of powering your project are by no means exhaustive and in all likelihood, you'll want to mix and match to suit your specific needs. I've ordered these in roughly ascending order with respect to how difficult or complicated they are to implement and use. In part I, I'll cover some basic and common methods that will get your project up and running quickly. In part II, I'll move onto some more advanced techniques that may offer a particular type of utility that fits well with some of your projects.
 
-I'll be covering an overview of different methods and will avoid going into specifics of each method in favor of discussing their pros and cons and how they might fit into your project. If you're very new to electronics and you're looking for a more detailed and introductory article, check out Sparkfun's article <a href="https://learn.sparkfun.com/tutorials/how-to-power-a-project">How to Power a Project</a>.
+Instead of going into the implementation details of each method, I'll aim to discuss their pros and cons and how they might fit into your project. If you're very new to electronics and you're looking for a more detailed and introductory article, check out Sparkfun's article <a href="https://learn.sparkfun.com/tutorials/how-to-power-a-project">How to Power a Project</a>.
 
 Standard Batteries
 ------------------------------
@@ -28,9 +28,9 @@ No matter what sort of power supply you're using, it always behooves you to doub
 
 <img class="showcase" src="/resources/images/blog/batteries.jpg" />
 
-<span class="note">Bonus points for using rechargable AA or AAA batteries, they are both readily available and extremely useful for both your hobby projects and your collection of power hungry devices around the house, but remember than many of these will measure in at slightly shy of their expected voltage. For AA and AAAs, expect around 1.2v maximum.</span>
+<span class="note">Bonus points for using rechargeable AA or AAA batteries, they are both readily available and extremely useful for both your hobby projects and your collection of power hungry devices around the house, but remember than many of these will measure in at slightly shy of their expected voltage. For AA and AAAs, expect around 1.2v maximum.</span>
 
-The benefit of using these replaceable batteries is that they're easy. For many projects, you can just drop a set of batteries in and run your project off of them directly without having to worry about charging or voltage regulation. Modern microcontrollers are flexible enough in their power requirements that unless you have a project that is particularly sensitive in timing or voltage requirements that running them directly off a battery will be fine for the most part.
+The benefit of using these replaceable batteries is that they're easy. For many projects, you can just drop a set of batteries in and run your project off of them directly without having to worry about charging or voltage regulation. Modern microcontrollers are flexible enough in their power requirements that this is unlikely to cause problems. You should, however, be sure to double check components that may be more sensitive.
 
 While most projects in their infancy will do fine plugging directly into a battery, once your project is ready to be deployed more permanently, you'll almost certainly want to flesh out the power supply with a few components. In order to get a consistent power supply, you'll almost certainly want to include a voltage regulator at some point for projects using a battery. When choosing your regulator, you'll want to take into consideration that a battery will have a lower output voltage as it becomes discharged. (a fact that you can exploit to provide a battery life status if your application calls for it) Choose a voltage regulator that accepts the range of voltages you expect from your batteries and outputs a consistent voltage.
 
