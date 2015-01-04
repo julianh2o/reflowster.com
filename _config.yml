@@ -7,3 +7,11 @@ exclude: [tasks, misc_unused]
 include: [.htaccess]
 #gems: [jekyll-navigation]
 excerpt_separator: <!--more-->
+authors:
+  julian:
+    display_name: Julian Hartline
+    gravatar: 300aa4fabf894a18d740058bbcad03e6
+    email: julianh2o@gmail.com
+    web: http://www.julianhartline.com/
+    twitter: reflowster
+    github: julianh2o

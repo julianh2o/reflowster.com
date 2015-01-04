@@ -9,6 +9,24 @@
     background: #000;
 }
 
+.postheader {
+	clear: both;
+	margin-bottom: 10px;
+	overflow: visible;
+}
+
+.gravatar {
+	float: left;	
+}
+
+.addthis_sharing_toolbox {
+	height: 25px;
+}
+
+.author {
+	font-weight: bold;
+}
+
 .pageHeader .nav {
 	margin-top: 6px;
 }
@@ -65,6 +83,17 @@ h2 {
 	font-weight: bold;
 	display: block;
 	border-radius: 5px;
+	padding: 5px;
+}
+
+.note {
+	display: block;
+	color: #0084b4;
+	font-size: 110%;
+	margin: 0 10px;
+	border: 1px solid #0084b4;
+	font-weight: bold;
+	border-radius: 10px;
 	padding: 5px;
 }
 
