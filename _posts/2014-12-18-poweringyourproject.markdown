@@ -20,7 +20,7 @@ Standard Batteries
 <br/>
 **Cons** voltage varies with charge and between types of cells, batteries run out of charge eventually!
 
-In some ways, standard batteries are the simplest method of powering a microcontroller. By putting a couple cells in series you can easily get 1.5v, 3v, 4.5v, and 6v. Most modern microcontrollers aren't too picky and will run anywhere from 3v to 6v. For example, the Atmega32u4 lists an operating voltage of 2.7 to 5.5 volts. It further specifies that the maximum operating frequency at 2.7v is 8Mhz and that to bump the speed up to 16 Mhz, the chip requires at least 4.5v. For this chip, your optimal power supply is probably 5v. It’ll run with 3 cells, but you probably shouldn't depend on 16Mhz operation using only 3 cells.
+In some ways, standard batteries are the simplest method of powering a microcontroller. By putting a couple cells in series you can easily get 1.5v, 3v, 4.5v, and 6v. Most modern microcontrollers aren't too picky and will run anywhere from 3v to 6v. The Atmega32u4, for example lists an operating voltage of 2.7 to 5.5 volts. It mentions further, however, that below 4.5v, you wont be able to get the full 16Mhz clock speed.
 
 An easy way to improve the quality of your battery power (at a hit to efficiency), is to install more cells than you need, and then use a voltage regulator to reduce the voltage. For example, you could use 6 cells for a total of about 8v, and then use a regulator to bring it down to a clean, stable 5v. I’ll explain this more in part 2.
 
@@ -44,17 +44,17 @@ You have a few options when powering your circuit from a wall. The safest and mo
 
 <img class="showcase" src="/resources/images/blog/psulabel.jpg" />
 
-You'll notice in this label that the power supply provides an output of 12v DC. For most projects, this will be too high. In order to use this power supply, you'd have to use a voltage regulator such as this <a href="https://www.sparkfun.com/products/107">Voltage Regulator - 5V</a> from Sparkfun to bridge the gap. In all honesty, I'd probably not even bother. I'd prefer looking for a DC power supply that provided exactly the voltage I needed, however, if I were trying to use a 5v microcontroller to drive a 12v device, I may use this in conjunction with some MOSFETs.
+You'll notice in this label that the power supply provides an output of 12v DC. For most projects, this will be too high. In order to use this power supply, you'd have to use a voltage regulator such as the L7805 to bridge the gap. In all honesty, I'd probably not even bother. I'd prefer looking for a DC power supply that provided exactly the voltage I needed, however, if I were trying to use a 5v microcontroller to drive a 12v device, I may use this in conjunction with some transistors.
 
 Once you've found a suitable charging cable or AC adaptor, simply clip the end off of it and strip the wires to get a nice regulated DC power supply. You may want to solder on some kind of header or wiring to make connecting a breadboard easier.
 
-A slightly more elegant option is to find a power supply that terminates in a standard barrel jack. You may have these lying around at home or you may need to purchase one. Either way, once you have one (or perhaps a set) all that you need to do is to get a batch of receptacles that fit your chosen standard. You can find these that are compatible with breadboards, solderable to PCBs, or terminated in wires. Here's one from Sparkfun that'll fit into a breadboard or a PCB: <a href="https://www.sparkfun.com/products/10811">DC Barrel Jack Adapter - Breadboard Compatible</a>
+A slightly more elegant option is to find a power supply that terminates in a standard barrel jack. You may have these lying around at home or you may need to purchase one. Either way, once you have one (or perhaps a set) all that you need to do is to get a batch of receptacles that fit your chosen standard. With some hunting, you can find a variety of these compatible with breadboards, solderable to PCBs, or terminated in wires.
 
 <img class="showcase" src="/resources/images/blog/barrel.jpg" />
 
 If you're not up for hacking apart an old cable, or can't seem to find any of them, you can buy a breadboard friendly power supply from a hobby supplier such as SparkFun. <a href="https://www.sparkfun.com/products/114">SparkFun Breadboard Power Supply 5V/3.3V</a>
 
-The main downside of this method is that you require an often-bulky wallwart to power your projects. I'm sure I don't need to explain the frustration often associated with trying to plug too many wallwarts into a power strip at the same time. If this is a concern you're interested in resolving, stay tuned for part II where I'll cover some additional ways of powering your device off of the wall.
+The main downside of this method is that you require an often-bulky wall adaptor to power your projects. I'm sure I don't need to explain the frustration often associated with trying to plug too many of these into a power strip at the same time. If this is a concern you're interested in resolving, stay tuned for part II where I'll cover some additional ways of powering your device off of the wall.
 
 USB power
 ---------
