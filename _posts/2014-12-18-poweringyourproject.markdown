@@ -3,7 +3,7 @@ layout: post
 title: "Powering your Electronics Project Part I"
 description: Powering a hobby project can be a project in itself, these power supply methods will help you get your project off the ground quickly.
 author: julian
-categories: disabled
+categories: blog
 ---
 
 Powering a hobby project can often be a project in itself. Most digital circuits require a power supply capable of providing 3 to 6 volts DC. Your projects may have requirements beyond the voltage and power such as portability, or very low power consumption. As a hobbyist, it is extremely helpful to have a variety of power supplies in your repertoire so that you can quickly and easily spin up projects with a diverse set of requirements.
