@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: Reflow Soldering Guide
 description: This guide has moved, follow the link to find the real reflow soldering guide.
 author: Julian Hartline

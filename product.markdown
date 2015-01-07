@@ -1,11 +1,13 @@
 ---
-layout: default
+layout: sidebar
 title: Product
 description: Reflowster controls the power to the oven using a relay and a thermocouple. A knob and button UI and USB programming port can be used to configure the reflow.
 navigation:
   order: 3
 author: Julian Hartline
 ---
+
+<h1>Product</h1>
 
 Reflowster quickly and easily turns your unmodified toaster oven into a reflow soldering station. Using a relay to control power to the oven and a thermocouple to measure the temperature inside the oven. Reflowster is ready to go in minutes and can cheaply and effectively solder any number of hobby projects. This allows you to avoid the tedium of hand-soldering a surface-mount PCB and the high cost of a commercially available reflow oven.
 

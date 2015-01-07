@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidebar
 title: Reflowster Manual
 description: This manual covers all of the basic menus and features of Reflowster as well as how to interface with a computer to get the most out of your reflow soldering experience.
 author: Julian Hartline

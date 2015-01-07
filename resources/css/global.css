@@ -9,6 +9,10 @@
     background: #000;
 }
 
+.paddedbody {
+	padding:10px;
+}
+
 .postheader {
 	clear: both;
 	margin-bottom: 10px;
