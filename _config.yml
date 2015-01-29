@@ -5,6 +5,7 @@ kickstarterurl: https://www.kickstarter.com/projects/reflowster/reflowster-solde
 highlighter: pygments
 exclude: [tasks, misc_unused, README.md]
 include: [.htaccess]
+url: http://reflowster.com
 #gems: [jekyll-navigation] #commented out because i modified jekyll navigation
 gems: [jekyll-sitemap]
 excerpt_separator: <!--more-->
