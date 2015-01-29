@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: empty
 title: Store
 navigation:
   link: http://store.reflowster.com
