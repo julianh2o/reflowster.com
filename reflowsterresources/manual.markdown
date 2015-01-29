@@ -35,35 +35,35 @@ Once the thermocouple is positioned, plug Reflowster into the wall and your toas
 
 Reflowster Anatomy
 ==================
-<img class="showcase" src="reflowmanual/annotated_reflowster_basic.png" />
+<img alt="This annotated Reflowster shows the important ports and UI elements" class="showcase" src="reflowmanual/annotated_reflowster_basic.png" />
 
 Main Menu
 =========
 The main menu comes up when the device is started. To get back to it from any other menus, press the back button to move up to enclosing menus until the main menu displays.
 
-<img class="showcase" src="mmap.png" />
+<img alt="This shows the layout and each of the options of the Reflowster menu" class="showcase" src="mmap.png" />
 
-<img class="display_header" src="reflowmanual/go.png" />
+<img alt="The seven segment displaying 'Go'" class="display_header" src="reflowmanual/go.png" />
 <b>Go</b>
 This will start the reflow process using the currently selected profile. Press the knob in while this is displaying to start the process and open the toaster oven when the status indicator turns blue and a tone is generated.
 
-<img class="display_header" src="reflowmanual/edit.png" />
+<img alt="The seven segment displaying 'Edit'" class="display_header" src="reflowmanual/edit.png" />
 <b>Edit Profile</b>
 This submenu allows you to configure the active profile by choosing either one of the preconfigured profiles or by creating a custom profile.
 
-<img class="display_header" src="reflowmanual/open.png" />
+<img alt="The seven segment displaying 'Open'" class="display_header" src="reflowmanual/open.png" />
 <b>Open Profile</b>
 This submenu allows you to configure additional options such as the units used to display temperature.
 
-<img class="display_header" src="reflowmanual/monitor.png" />
+<img alt="The extended display of 'Monitor'" class="display_header" src="reflowmanual/monitor.png" />
 <b>Monitor</b>
 This puts Reflowster into monitor mode until the back button is pressed. Monitor mode does nothing except for display the current temperature read by the thermocouple probe.
 
-<img class="display_header" src="reflowmanual/config.png" />
+<img alt="The extended display of 'Config'" class="display_header" src="reflowmanual/config.png" />
 <b>Config</b>
 This submenu contains some options to configure Reflowster
 
-<img class="display_header" src="reflowmanual/holdtemp.png" />
+<img alt="The extended display of 'Hold Temp'" class="display_header" src="reflowmanual/holdtemp.png" />
 <b>Hold Temperature (advanced mode only)</b>
 This allows you to set a temperature. Once set, Reflowster will attempt to maintain this temperature inside the oven.
 
@@ -71,14 +71,14 @@ Edit Profile Menu
 =================
 This menu lets you view and modify the temperature and duration settings of the currently open profile.
 
-<img class="display_header" src="reflowmanual/soaktemp.png" />
+<img alt="The extended display of 'st-soak temp'" class="display_header" src="reflowmanual/soaktemp.png" />
 <b>Soak Temperature</b> - This is the temperature that Reflowster will initially heat up to.
 
-<img class="display_header" src="reflowmanual/soakduration.png" />
+<img alt="The extended display of 'sd-soak duration'" class="display_header" src="reflowmanual/soakduration.png" />
 <b>Soak Duration</b> - Once the soak temperature is reached, Reflowster will turn off the
 power to the toaster oven and let the PCB soak for the configured duration.
 
-<img class="display_header" src="reflowmanual/peaktemp.png" />
+<img alt="The extended display of 'pt-peak temp'" class="display_header" src="reflowmanual/peaktemp.png" />
 <b>Peak Temperature</b> - After the soak duration, Reflowster turns the toaster oven back on until the peak temperature is reached. At this point, Reflowster will turn off the oven again for the cooling phase. The door to the oven should be opened manually at this point.
 
 The default leaded profile uses a 130C soak for 90 seconds with a peak temperature of 225C.
@@ -100,11 +100,11 @@ This menu allows you to switch your currently active profile so that you can kee
 
 There are three profiles available for configuring: "Leaded", "Unleaded", and "Custom".
 
-<img class="display_header" src="reflowmanual/leaded.png" />
+<img alt="The extended display of 'pb leaded'" class="display_header" src="reflowmanual/leaded.png" />
 <br/>
-<img class="display_header" src="reflowmanual/unleaded.png" />
+<img alt="The extended display of '-pb unleaded'" class="display_header" src="reflowmanual/unleaded.png" />
 <br/>
-<img class="display_header" src="reflowmanual/custom.png" />
+<img alt="The extended display of 'custom'" class="display_header" src="reflowmanual/custom.png" />
 
 
 Monitor Mode
@@ -117,13 +117,13 @@ Configuration Menu
 ==================
 The configuration menu contains various options for configuring Reflowster.
 
-<img class="display_header" src="reflowmanual/tempmode.png" />
+<img alt="The extended display of 'temp mode'" class="display_header" src="reflowmanual/tempmode.png" />
 <b>Temperature mode</b> - Fahrenheit or Celsius temperature can be configured here. Regardless of what you select, temperatures will be stored internally as Celsius. This setting affects monitor mode, temperature hold mode, editing profiles, and the reflow process itself.
 
-<img class="display_header" src="reflowmanual/advfeatures.png" />
+<img alt="The extended display of 'adv features'" class="display_header" src="reflowmanual/advfeatures.png" />
 <b>Advanced Features</b> - Advanced mode can be enabled here to reveal additional functionality in Reflowster.
 
-<img class="display_header" src="reflowmanual/factoryreset.png" />
+<img alt="The extended display of 'factory reset'" class="display_header" src="reflowmanual/factoryreset.png" />
 <b>Factory reset</b> - Choosing this option will reset Reflowster to its default configuration. You will be asked to confirm before the factory reset occurs.
 
 Temperature Hold Mode (Advanced)

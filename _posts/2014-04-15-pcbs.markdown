@@ -18,6 +18,6 @@ The above prices are for 2 layer boards, with solder mask and silkscreen on both
 Add in $5 for shipping and you've just gotten yourself some high quality PCBs that are ready for soldering parts to.
 
 All the PCBs in this image are from SeeedStuido.
-<img class="showcase" src="/resources/images/pcbs.jpg">
+<img alt="Some PCBs lying around including a LiPo battery module connected to an LED" class="showcase" src="/resources/images/pcbs.jpg">
 
 There are other services as well that offer some competitively priced PCBs, but SeeedStuido has been our go-to from the beginning and it's always been a good experience.

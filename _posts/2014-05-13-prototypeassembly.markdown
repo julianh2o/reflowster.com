@@ -6,7 +6,7 @@ categories: news
 
 
 All of the PCBs and parts arrived earlier last week and we started the first assembly of the new version of Reflowster. As expected, the first assembly revealed a few minor bugs in the circuit board but nothing that we weren't able to easily update for the next version and install minor work-arounds to remedy.
-<img class="showcase" src="/resources/images/updates/update_05_13_2014_1.jpg">
+<img alt="Soldering some wires onto the new version of the Reflowster PCB" class="showcase" src="/resources/images/updates/update_05_13_2014_1.jpg">
 
 <!--more-->
 

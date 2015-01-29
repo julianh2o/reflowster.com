@@ -22,6 +22,6 @@ As we've been using Reflowster, however, we've been noticing some limitations to
 In order to help with some of these minor inconveniences, we're entertaining the possibility of doing a redesign on the exterior enclosure. The redesign would be almost entirely external and require few changes to the interior circuit board but could potentially provide a smoother experience when setting up your reflow station. Moving to this new design would not impact schedule.
 
 Here is a sketch of what the new case might look like:
-<img class="showcase" src="/resources/images/updates/update_04_10_2014_1.jpg">
+<img alt="A mock up of our new Reflowster design showing two IEC cords coming out of the bottom of Reflowster" class="showcase" src="/resources/images/updates/update_04_10_2014_1.jpg">
 
 Your feedback is important to us and we'd like to hear from you. Which design do you prefer and why? Please leave a comment here or message us if you have an opinion either way.

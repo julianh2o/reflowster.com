@@ -12,7 +12,7 @@ As you probably know, our original design ran using a fixed linear power supply 
 <!--more-->
 
 If you’ve been following our updates, you probably already know that we’ve been considering moving away from the wall-wart design of the Reflowster in our video. The feedback that we’ve gotten has been pretty positive so far and we’re definitely leaning toward that as an option. In addition to switching to a box with cords design, we’re considering using IEC-C13 and IEC-C14 plugs on Reflowster and bundling a set of cables. IEC-C13/C14 are the standard plugs that most computer power supplies and monitors use.
-<img class="showcase" src="/resources/images/updates/update_04_14_2014_1.jpg">
+<img alt="A close up of the in and out versions of the IEC connectors that we'll be using on Reflowster" class="showcase" src="/resources/images/updates/update_04_14_2014_1.jpg">
 
 This design, combined with the power supply upgrade will make Reflowster entirely internationally compatible, though our international backers might need to procure their own IEC compatible cables. (We haven’t decided whether we can get a good price on the international cables yet)
 

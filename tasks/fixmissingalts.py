@@ -72,7 +72,6 @@ def main():
                 temphtmlfile += "<hr/>";
         temphtmlfilename = "/tmp/view.html"
         stringToFile(temphtmlfilename,temphtmlfile);
-        print("writing temp html file to %s" % temphtmlfilename);
         for m in re.finditer("<img .*?>",contents):
             tag = parseXmlTag(m.group(0));
             if ("alt" not in tag["attributes"].keys()):
@@ -88,9 +87,8 @@ def main():
                     replacementInfo = (m.start(),m.end(),replacementString)
                     replacements.append(replacementInfo)
         if (len(replacements)):
-            newContents = performReplacements(contents,replacements,verbose=True);
-            print("writing ",f+".edited");
-            stringToFile(f+".edited",newContents)
-            exit(0)
+            newContents = performReplacements(contents,replacements);
+            print("Writing ",f);
+            stringToFile(f,newContents)
 
 main();

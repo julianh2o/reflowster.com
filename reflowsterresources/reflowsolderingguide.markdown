@@ -21,7 +21,7 @@ We've used DigiKey as our primary vendor for our surface mount parts, but there 
 
 Most parts that you are used to getting in SIP, DIP, and other through-hole packages will also come in a variety of surface mount packages. In fact, there are some parts that can only be found in surface mount packaging. When selecting parts, you'll want to double check the land pattern recommended by the part and in particular, the package's pitch, or the spacing between the pins. If you get a part with too small of a pitch, you may have a hard time soldering it depending on what methods you are using and your skill and experience with the method. The SOIC package, which is large enough to be hand-soldered, might be a good choice for a beginner.
 
-<img class="showcase" src="reflowguide/smtparts.jpg" />
+<img alt="Surface mount parts are tiny, this comparison shows a handful of parts compared to a ruler and a penny" class="showcase" src="reflowguide/smtparts.jpg" />
 
 Many passive parts like resistors and capacitors for can be found in a standard 603 package that we've found to be a very good combination of being small enough to allow for very compact circuitry and large enough to be manageable without too much difficulty. If the 603 seems too small too you, try an 805.
 
@@ -37,7 +37,7 @@ Fabricating a custom printed circuit board
 
 Once you've designed your circuit board and checked it thrice, it's time to get it fabricated. Where a few years ago our options were limited to hand-etching your own circuit board, these days you can submit Gerber files to a service online and have your custom circuit board in the mail a few days or weeks later (depending on how much you want to spend).
 
-<img class="showcase" src="reflowguide/gerbv.jpg" />
+<img alt="Gerbv is a convenient way of sanity checking your PCBs designs before shipping them off to get fabricated" class="showcase" src="reflowguide/gerbv.jpg" />
 
 Sometimes exporting Gerber files can be a little tricky, so we've been using a nifty program called "gerbv" (gerbv.sourceforge.net) to verify our Gerber and NC Drill files. It's lightweight and free, and it's a good sanity check to make sure all your layers are lined up.
 
@@ -52,7 +52,7 @@ Solder paste is a viscous suspension of solder particles in flux. It typically c
 
 When applying solder paste by hand, you'll want to try to aim for as much consistency as possible for the amount of solder paste per square millimeter of pad (or contact). While that may sound intimidating, usually this means sorta smearing a glob of solder paste across a pad or briefly dabbing a drop of paste against it. The amount of solder paste you'll want to apply will vary slightly based on the footprint of the component you are trying to solder. 603s and 805s  will not only sustain, but benefit from having slightly more solder paste on each contact where a dense package like a QFN will solder best when a very thin smear of solder paste is used.
 
-<img class="showcase" src="reflowguide/pcbpaste.png" />
+<img alt="This diagram shows how much solder paste should be applied to pads" class="showcase" src="reflowguide/pcbpaste.png" />
 
 With experience, you'll get a better feeling for the optimal amount of solder paste for different components, but our general advice is to err on the side of too little solder paste than too much solder paste.
 
@@ -65,15 +65,15 @@ As an alternative, we've been using a Silhouette Cameo to cut stencils out of tr
 
 Cutting your own stencils may seem like a daunting task, but using the Silhouette Cameo we've been able to get good and repeatable results without too much heartache. This setup is made possible by a fantastic script called "gerber2graphtec" that you can get from github. There is a thread on DangerousPrototypes that describes how to install and use this script. In our experience, 3M brand PP2500 transparencies work pretty well but we've have the best results using 3mil Polyester film from McMaster Carr. This film comes in a variety of thicknesses including 3, 4, and 5 mils and can you buy a huge roll for as little as $15. The 3mil film seems to cut more cleanly than the transparency. As for cutting this film, we set our Cameo for 1 pass at minimum speed and a force of about 13. In any case, the ability to cut your own stencils straight from gerber files in minutes and using less than $1 of materials is pretty great. The polyester stencils don't last as long and are difficult to clean, so we usually cut a new one each day we use it.
 
-<img class="showcase" src="reflowguide/gerber2graphtec.png" />
+<img alt="The python program gerber2graphtec allows you to turn a Gerber file into a stencil using a desktop stencil cutter such as Sthe Silhouette Cameo" class="showcase" src="reflowguide/gerber2graphtec.png" />
 
 Once you're happy with your stencil, it's time to put it to use. We're guilty of using a fairly primitive setup to hold the stencil over the circuit board while we apply the solder paste. We took a simple plexiglass sheet and taped a few spare PCBs of the same thickness as our target board in a configuration such that there is a space inside that perfectly fits the board we are trying to populate. Once this is all taped into place, the stencil is carefully positioned over the target board and taped into place on one side. The target board is not taped so that the stencil can be peeled back and the board, once covered in paste, can easily be removed and replaced with the next.
 
-<img class="showcase" src="reflowguide/stencilpaste.jpg" />
+<img alt="Applying solder paste using a stencil allows for a much more consistent and expedient process" class="showcase" src="reflowguide/stencilpaste.jpg" />
 
 When applying the paste, we've found that a putty scraper, a razor blade, or even another PCB all make suitable tools for spreading the solder paste over your stencil. You'll want to place a copious amount of solder paste just beyond the last hole on one corner of your stencil at a 45 degree angle from your PCB (or the majority of your pads). Doing this will let you scrape the solder paste over the holes in the stencil such that you are never pushing solder paste directly into the edge of a hole.
 
-<img class="showcase" src="reflowguide/stencilpastediagram.png" />
+<img alt="A simple diagram shows that pulling the paste at a 45 degree angle to the edges keeps your scraper from getting caught or missing parts of your pads" class="showcase" src="reflowguide/stencilpastediagram.png" />
 
 Spread the solder paste in a single smooth motion over your stencil. You'll want to keep a shallow angle to the stencil and push hard enough on your stencil so that there is little to no residual solder left as your scraper passes.
 

@@ -4,7 +4,7 @@ title:  "Kickstarter Launch"
 categories: news
 ---
 
-<span class="tagline">Our <img height="20px" src="/resources/images/kickstarter-logo-light.png" /> campaign is now live!</span>
+<span class="tagline">Our <img alt="Kickstarter Logo" height="20px" src="/resources/images/kickstarter-logo-light.png" /> campaign is now live!</span>
 
 After a month and some change of preparation, we've finally launched our Kickstarter campaign! Be sure to watch our video on Kickstarter and support
 us on our <a href='{{ site.kickstarterurl }}'>Kickstarter campaign page</a>

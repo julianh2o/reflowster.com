@@ -10,6 +10,6 @@ Reflowster may not work perfectly with every toaster oven, but we've found that 
 
 Remember that you'll probably want to buy a toaster oven specifically for using for reflow soldering. Once you've baked solder paste in a toaster oven, we highly recommend not using it for food. We plan on including Reflowster stickers that say something to this extent to place on your toaster ovens.
 
-<img class="showcase" src="/resources/images/toaster.png">
+<img alt="A standard toaster oven that we've been using with Reflowster" class="showcase" src="/resources/images/toaster.png">
 
 If you're in the market for a new toaster for reflow soldering, our suggestion is to get the cheapest one you can find. The cheapest one we found is the [Proctor Silex 31111](http://www.amazon.com/gp/product/B004O0ANH2) on Amazon. You may be able to find a cheaper one, but this is the one that we will be shipping with the special edition Reflowsters. It has worked well for us so far and is known to be compatible with Reflowster.

@@ -6,7 +6,7 @@ categories: news
 
 <p>After a few rounds of assembly, we finally took a break to box up some of the Reflowsters and send them on their way. Today we shipped 15 special edition Reflowsters complete with their extras. (The toaster ovens and extension cords are not yet shipped and will arrive separately)</p>
 
-<img class="showcase" src="/resources/images/updates/update_10_01_2014_1.jpg">
+<img alt="The first batch of Reflowsters boxed up and ready to go in the back of my car" class="showcase" src="/resources/images/updates/update_10_01_2014_1.jpg">
 
 <!--more-->
 
@@ -14,7 +14,7 @@ categories: news
 
 <p>To the rest of our backers, don't fret! Your Reflowsters will be on their way soon enough. We've been hard at work pumping Reflowsters out and have a number of them in various stages of the pipeline. We'll continue shipping Reflowsters as they are ready and hope to have all of them delivered by the end of November!</p>
 
-<img class="showcase" src="/resources/images/updates/update_10_01_2014_2.jpg">
+<img alt="A tray full of assembled Reflowsters ready for boxing up" class="showcase" src="/resources/images/updates/update_10_01_2014_2.jpg">
 
 <p>Now that Reflowster is "officially" out in the wild, we'd like to take the time to highlight the resources that we have for you to help you get started with Reflowster and to let you contribute back to the Reflowster community.</p>
 

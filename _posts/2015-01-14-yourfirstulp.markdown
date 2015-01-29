@@ -18,7 +18,7 @@ EAGLE's User Language Programs are written using a C-like syntax detailed in the
 
 Unfortunately, ULPs are not provided direct access to modifying these objects. In order to edit your EAGLE document, you'll have to generate the string of EAGLE commands to perform the desired manipulation. Even more limiting, you'll only have one opportunity to execute a command and that is while returning control to EAGLE through the exit command. Passing a string as the argument to exit will cause the string to be executed as an EAGLE command.
 
-<img class="showcase" src="/resources/images/blog/eagle_simple_wire.png" />
+<img alt="This simple ULP will draw a single wire" class="showcase" src="/resources/images/blog/eagle_simple_wire.png" />
 
 The above program will execute the EAGLE command "WIRE (0 0) (1 0);" which selects the wire tool and then simulates a click at the origin (0,0) and another click at (1,0). I will continue to describe how each of the EAGLE commands that I'm using works, but if you are ever confused, use EAGLE's built-in help files to look the commands up under "Editor Commands"
 
@@ -26,7 +26,7 @@ Setting up
 ----------
 EAGLE comes with a fairly extensive set of ULPs located in the "ulp" folder. By default, this is the only directory that EAGLE will look for scripts in. Before starting with scripting, I'd highly recommend creating your own script directory for your projects and pointing EAGLE to it through the menu option Options > Directory. To do this, add your folder to the list separated by the ":" character as below.
 
-<img class="showcase" src="/resources/images/blog/eagle_directories.png" />
+<img alt="In the directory options, you can append a custom path to any of the directory options to expand the search path" class="showcase" src="/resources/images/blog/eagle_directories.png" />
 
 Now that you have a folder for your ULPs, create a new script there. You can either use EAGLE's New > ULP menu item or you can simply create a new empty text file with the extension ".ulp". For the sake of this tutorial, we'll use the name "tutorial.ulp". Once you've created this file, fill it with the sample program from the screenshot above. (reproduced below for convenience).
 
@@ -53,7 +53,7 @@ For the obligatory "Hello World" and for a convenient method of debugging your m
 
 The script above will open the file "/tmp/ulp\_output.txt" for appending text to. All enclosed calls to printf will write to this file. In order to get this to function properly for you, you may need to change the path to something that will be valid on your system. Because I'm running EAGLE under OS X, the /tmp/ folder provides a convenient place for debugging output. Furthermore, I can open the Terminal application and use the command *tail -f /tmp/ulp\_output.txt* to display new printed messages as soon as they are written to the file.
 
-<img class="showcase" src="/resources/images/blog/eagle_hello_world.png" />
+<img alt="Tailing the output file shows new lines as they are added to the file" class="showcase" src="/resources/images/blog/eagle_hello_world.png" />
 
 I recommend using this sort of debugging output for almost every ULP you write. Even simple ULPs can benefit immensely from some quick message logging using this method. When I create a new ULP, the first thing I do is encase the entire file in an output block like the one above.
 
@@ -67,7 +67,7 @@ Noticing this as a pattern, it didn't take me long to decide that it would be gr
 
 You can test this out by copying and pasting it into the EAGLE command window and hitting enter. We could do this every time, but we're faced with the tedium of replacing the values for each corner of our box.
 
-<img class="showcase" src="/resources/images/blog/eagle_wirebox.png" />
+<img alt="Typing out the WIRE command manually is effective at getting exactly what you want but is slow" class="showcase" src="/resources/images/blog/eagle_wirebox.png" />
 
 Here is a ULP that generates a box centered at the origin when provided with the length and the width. Below, I'll go through the program line by line.
 
@@ -145,7 +145,7 @@ Lastly, we're exiting with the value s to terminate our ULP and execute the comm
 
 Here is an example execution of the script
 
-<img class="showcase" src="/resources/images/blog/eagle_boxes.png">
+<img alt="This screen shot shows the result of running our new box command twice" class="showcase" src="/resources/images/blog/eagle_boxes.png">
 
 
 Furthering your ULP scripting

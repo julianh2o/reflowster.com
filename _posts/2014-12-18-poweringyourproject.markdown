@@ -26,7 +26,7 @@ An easy way to improve the quality of your battery power (at a hit to efficiency
 
 No matter what sort of power supply you're using, it always behooves you to double check the voltages that your components are designed for as well as the output of your power supply.
 
-<img class="showcase" src="/resources/images/blog/batteries.jpg" />
+<img alt="A variety of standard batteries exist in a number of different voltages" class="showcase" src="/resources/images/blog/batteries.jpg" />
 
 <span class="note">Bonus points for using rechargeable AA or AAA batteries, they are both readily available and extremely useful for both your hobby projects and your collection of power hungry devices around the house, but remember than many of these will measure in at slightly shy of their expected voltage. For AA and AAAs, expect around 1.2v maximum.</span>
 
@@ -42,7 +42,7 @@ Wall power using an adaptor
 
 You have a few options when powering your circuit from a wall. The safest and most satisfying of which (in my humble opinion) is to dig up the charging cable to one of your old phones and read the fine print on the back. Many of these charging cables have an output voltage that you can use.
 
-<img class="showcase" src="/resources/images/blog/psulabel.jpg" />
+<img alt="The label on your AC adapter will tell you the electrical characteristics of it's output" class="showcase" src="/resources/images/blog/psulabel.jpg" />
 
 You'll notice in this label that the power supply provides an output of 12v DC. For most projects, this will be too high. In order to use this power supply, you'd have to use a voltage regulator such as the L7805 to bridge the gap. In all honesty, I'd probably not even bother. I'd prefer looking for a DC power supply that provided exactly the voltage I needed, however, if I were trying to use a 5v microcontroller to drive a 12v device, I may use this in conjunction with some transistors.
 
@@ -50,7 +50,7 @@ Once you've found a suitable charging cable or AC adaptor, simply clip the end o
 
 A slightly more elegant option is to find a power supply that terminates in a standard barrel jack. You may have these lying around at home or you may need to purchase one. Either way, once you have one (or perhaps a set) all that you need to do is to get a batch of receptacles that fit your chosen standard. With some hunting, you can find a variety of these compatible with breadboards, solderable to PCBs, or terminated in wires.
 
-<img class="showcase" src="/resources/images/blog/barrel.jpg" />
+<img alt="A close up of one of my nRF LED boards shows the large barrel power jack that I use to power it" class="showcase" src="/resources/images/blog/barrel.jpg" />
 
 If you're not up for hacking apart an old cable, or can't seem to find any of them, you can buy a breadboard friendly power supply from a hobby supplier such as SparkFun. <a href="https://www.sparkfun.com/products/114">SparkFun Breadboard Power Supply 5V/3.3V</a>
 
@@ -64,7 +64,7 @@ USB power
 
 More recently, I've been powering almost all of my projects with USB. In particular because the Atmega32u4 has an onboard FTDI module, you can program directly through USB. Because you're already using the USB for data, you might as well hijack it for power as well. While programming your project, you'll be getting power from your computer. When you're not programming, you can switch to using a standard micro USB charging cable that plugs into a wall. While powering your projects this way, you can use either a micro USB or a mini USB, though, in general, I'd recommend sticking with micro USB as it is the newer standard and has a few minor improvements over mini.
 
-<img class="showcase" src="/resources/images/blog/miniusb.jpg" />
+<img alt="This Arduino uses a mini USB power for both programming and power" class="showcase" src="/resources/images/blog/miniusb.jpg" />
 
 If you like, a diode in series with the VCC line of the USB will allow you to power your device through USB, or another power source, or even with both connected.
 
