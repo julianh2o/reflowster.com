@@ -9,6 +9,61 @@
     background: #000;
 }
 
+/* ====== media ====== */
+.media {margin:10px;}
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media .img {float:left; margin-right: 10px;}
+.media .img img{display:block;}
+.media .imgExt{float:right; margin-left: 10px;}
+
+.iconlink, .iconlink:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 80%;
+}
+
+.linkicons {
+	display: inline;
+}
+
+.linkicons * {
+	display: inline;
+}
+
+.company {
+	color: black;
+	max-width: 500px;
+	border-radius: 5px;
+	background: white;
+	padding: 3px;
+	margin: 3px auto;
+}
+
+.company [itemprop="description"] {
+	display: block;
+	font-size: 70%;
+}
+
+.company [itemprop="image"] {
+	width: 50px;
+	border-radius: 5px;
+}
+
+.body {
+	min-height: 600px;
+}
+
+.footer {
+	padding: 6px;
+	min-height: 200px;
+	background: black;
+	color: #666;
+}
+
 .paddedbody {
 	padding:10px;
 }

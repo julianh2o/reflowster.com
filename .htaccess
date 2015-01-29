@@ -1,1 +1,4 @@
 AddType application/x-httpd-php55 .php
+
+RewriteCond %{HTTP_HOST} ^www\.reflowster\.com [NC]
+RewriteRule ^(.*)$ http://reflowster.com/$1 [L,R=301]

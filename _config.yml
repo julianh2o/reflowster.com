@@ -2,10 +2,11 @@ name: Reflowster
 titletagline: The hobbyists reflow soldering oven
 markdown: redcarpet
 kickstarterurl: https://www.kickstarter.com/projects/reflowster/reflowster-soldering-controller-for-surface-mount
-pygments: true
-exclude: [tasks, misc_unused]
+highlighter: pygments
+exclude: [tasks, misc_unused, README.md, *.swp*]
 include: [.htaccess]
-#gems: [jekyll-navigation]
+#gems: [jekyll-navigation] #commented out because i modified jekyll navigation
+gems: [jekyll-sitemap]
 excerpt_separator: <!--more-->
 authors:
   julian:
