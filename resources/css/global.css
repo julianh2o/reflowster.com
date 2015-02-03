@@ -9,6 +9,10 @@
     background: #000;
 }
 
+h2.blog {
+	background-color: #42ca8b;
+}
+
 /* ====== media ====== */
 .media {margin:10px;}
 .media, .bd {overflow:hidden; _overflow:visible; zoom:1;}

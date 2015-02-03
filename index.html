@@ -19,11 +19,17 @@ author: Julian Hartline
 </p>
 
 <br/>
-<br/>
-<span class="tagline">News</span>
 {% for post in site.posts %}
 	{% if post.categories contains 'news' %}
 		<h2>{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></h2>
+		{{ post.excerpt }}
+		<a href="{{ post.url }}">read more..</a>
+		<br/>
+		<br/>
+	{% endif %}
+	
+	{% if post.categories contains 'blog' %}
+		<h2 class="blog">{{ post.date | date_to_string }} - Blog: <a href="{{ post.url }}">{{ post.title }}</a></h2>
 		{{ post.excerpt }}
 		<a href="{{ post.url }}">read more..</a>
 		<br/>
