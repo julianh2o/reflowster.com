@@ -201,7 +201,7 @@ h2 a:hover {
 	color: #999;
 }
 
-.text-over .preorderlink {
+.text-over .orderlink {
 	text-align: right;
 }
 
@@ -218,7 +218,7 @@ h2 a:hover {
 	display: inline-block;
 }
 
-.preorder {
+.ordernow {
 	display: inline-block;
 	border: none;
 	border-radius: 4px;
@@ -230,7 +230,7 @@ h2 a:hover {
 	text-decoration: none;
 }
 
-.preorder:hover {
+.ordernow:hover {
 	background-color: #356FA2;
 	text-decoration: none;
 	color: white;
