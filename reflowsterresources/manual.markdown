@@ -173,7 +173,7 @@ Note: This behavior may change in future versions of the firmware to be more sta
 <tt>stop</tt>
 (reflow mode) - Stops the reflow process
 
-<img alt="A sample interaction with Reflowster" class="display_header" src="reflowmanual/usbcontrol.png" />
+<img alt="A sample interaction with Reflowster" class="showcase" src="reflowmanual/usbcontrol.png" />
 
 In addition to accepting commands, Reflowster will, when running a reflow job and when in monitor mode will report temperature data via the serial interface.
 
