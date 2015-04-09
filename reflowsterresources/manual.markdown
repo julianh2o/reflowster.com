@@ -145,6 +145,8 @@ Reflowster has a powerful serial interface that allows you to send commands and 
 
 In revision 5 of the firmware, Reflowster consumes characters off the serial as long as they are available. When there are no longer available characters, it interprets the command. No line termination is required. To get this behavior, it is recommended that you use the Arduino IDE's serial monitor configured with no line ending and 9600 baud.
 
+In revision 6 and above, Reflowster fills its buffer until it gets either a CR or a LF character. It interprets the buffer as a command. You'll need to switch the Arduino IDE to send a newline character after every command. Additionally, Reflowster echos each character sent as it is received and accumulated into the buffer. This makes interacting with Reflowster easier when using a dumb terminal.
+
 Note: This behavior may change in future versions of the firmware to be more standard. (eg.. accepting a newline as the termination)
 
 <span class="note">Note: If you have set up the Arduino IDE for use with Reflowster, you can simply use the "Serial Monitor" feature under the tools menu.</span>
