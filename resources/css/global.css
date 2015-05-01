@@ -9,6 +9,12 @@
     background: #000;
 }
 
+.icon_phone {
+	background-url:url("/resources/images/phone.svg")
+	width: 15px;
+	display: inline-block;
+}
+
 h2.blog {
 	background-color: #42ca8b;
 }
