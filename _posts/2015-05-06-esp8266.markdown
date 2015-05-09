@@ -1,0 +1,111 @@
+---
+layout: post
+title: "The internet of things and the ESP8266"
+description: The ESP8266 is an impressively capable Wi-Fi enabled board with a powerful microprocessor and Arduino compatibility.
+author: julian
+categories: blog
+---
+
+Connecting to the internet is often an extremely powerful way to extend or control your projects. For a long time, there simply weren’t any very good options for doing this without either breaking the bank or reinventing the wheel. Makers everywhere rejoice; that time has come to an end.
+
+<!--more-->
+
+A ESP8266 will cost you between $3 and $6 depending on how long you’re willing to wait for it and lets you connect to the internet by issuing commands and requests through a simple but powerful serial interface. There are a number of simple tutorials out there to help you figure out how to set up basic communication with an ESP8266 using either a USB to Serial cable to try it out or to program an Arduino to connect to the internet.
+
+But wait, there’s more! Not only are these boards relatively easy to reprogram via USB, a recent Arduino fork allows you to program the ESP8266 directly from the Arduino IDE. Furthermore, it turns out that the ARM chip that’s the brains of the module is not only fast enough to handle all of the Wi-Fi communication, is fast enough to do so while still blowing just about every other Arduino board out of the water in terms of performance.
+
+That’s right, you can get an Arduino-compatible microcontroller board that has Wi-Fi capabilities built in for as low as $3. Not only is this a steal compared to other Arduino boards, having Wi-Fi built in from the beginning opens a huge door for a myriad of “Internet of Things” projects.
+
+<img class="showcase" src="/resources/images/blog/esp8266/esp8266.jpg" />
+
+The base model of the ESP8266 (above) has 8 pins, two of which are available for general I/O and two of which are dedicated to serial communication.
+
+The ESP-12 (below) is not only FCC certified, but breaks out a few additional IO pins for larger projects. If you're still short on pins, consider using a port expander or external ADC module.
+
+<img class="showcase" src="/resources/images/blog/esp8266/esp12.jpg" />
+
+Programming the ESP8266
+-----------------------
+First, you’ll want to make sure that you have a way of communicating with your ESP8266. To do this, you’ll need to communicate with it over serial at 115200 baud. For button-less programming, you’ll also need access to the DTR and RTS pins of your chosen serial connection.
+
+If you don’t have access to these pins, don’t worry, you’ll hook the equivalent pins to a button with a pull-up resistor instead and program by manually putting the module into flash mode by holding the GPIO0 pin LOW during startup (release from reset).
+
+Second, you’ll need a power supply capable of generating around 3 volts. You’ll probably be getting 5v from your serial connection and will likely want to power the ESP8266 off of either a battery of a voltage regulator capable of generating 3v. For best results, use a power supply that can easily provide 300mA. We used in our example an LM317 adjustable voltage regulator set via resistors to just above 3v.
+
+Once you’ve secuired the necessary items, download a copy of the [Arduino/esp8266](https://github.com/esp8266/Arduino) fork of the IDE from Github.
+
+Now that we’ve got everything we need, let’s wire this thing up. The ESP8266 is a 3v board and is very likely to burn out if you try to power it with a 5v power supply such as the standard serial power from a USB to Serial board. While I haven’t tried it myself, two AA batteries should work just fine in a pinch as long as they are well charged.
+
+**Note:** We’re communicating with the ESP8266 using the 5v serial TX line where a 3v line may be more appropriate. While this is perhaps not ideal, it has worked for us consistently.
+
+The data pins on the basic ESP8266 are as follows:
+
+**RX** - Wire this to the TX pin of your serial interface
+
+**TX** - Wire this to the RX pin of your serial interface
+
+**CH_PD** - Must be held HIGH during operation, dropping this low will disable the ESP8266
+
+**RST** - The reset pin, must be held HIGH for normal operation, a low value will reset the ESP8266
+
+**GPIO0** - The “flash” pin. If held LOW during startup, enables programming mode
+
+**GPIO2**  - Must be HIGH during startup for normal operation, use a pull-up on this pin
+
+<img class="showcase" src="/resources/images/blog/esp8266/esppinout.png" />
+
+If you have access to both the DTR and RTS pin on your serial connection, you can wire your ESP8266 for automatic programming (buttonless) as follows.
+
+ESP RX => SERIAL TX
+
+ESP TX => SERIAL RX
+
+ESP CH_PD => 3V
+
+ESP RST => SERIAL RTS
+
+ESP GPIO0 => SERIAL DTR
+
+ESP GPIO2 => 3V, or an LED with a high resistance pull-up resistor
+
+<img class="showcase" src="/resources/images/blog/esp8266/usbprogram.png" />
+
+**Note:** Don’t confuse RTS with RST. RTS is the RS232 pin for “Request To Send”. RST is the ESP’s reset pin. When programming the ESP8266 using serial, the RTS pin is being “hijacked” in order to put the module into programming mode.
+
+If you’re having trouble with the above configuration for whatever reason or don’t have access to all of those pins, wire for the manual approach below.
+
+If you have access to both the DTR and RTS pin on your serial connection, you can wire your ESP8266 for automatic programming (buttonless) as follows.
+
+ESP RX => SERIAL TX
+
+ESP TX => SERIAL RX
+
+ESP CH_PD => 3V
+
+ESP RST => Reset button with pull-up to 3v
+
+ESP GPIO0 => Flash button with pull-up 3v
+
+ESP GPIO2 => 3V, or an LED with a high resistance pull-up resistor
+
+<img class="showcase" src="/resources/images/blog/esp8266/buttonprogram.png" />
+
+In this configuration, before each upload you’ll have to put the ESP8266 into flash mode. To do this, first hold the flash button down. While the flash button is held, press and release the reset button. Once the ESP8266 has reset, release the flash button. (this can be done immediately as long as you’ve released the reset button before the flash button)
+
+<img class="showcase" src="/resources/images/blog/esp8266/arduinoidemenu.png" />
+
+Configure your Arduino IDE to use the “Generic ESP8266 Board” as the board, 115200 as the upload speed, and the appropriate USB device in the port menu.
+
+To test your configuration, open up the blink program from the examples menu, set the LED pin to 2, and hit upload (remember to put the ESP8266 in flash mode if you’ve wired it to buttons). Pop an LED into the GPIO2 pin and either pat yourself on the back or dive into troubleshooting.
+
+Troubleshooting and notes
+-----------------------
+When the ESP8266 is working, it works great, but we hit a few snags along the way before we managed to get to that point.
+
+* First of all, double check your wiring. It’s almost silly to say, but you’d be surprised at how many times a perplexing failure can be traced back to a simple wiring error.
+* If you’re using the automatic programming wiring, switch to the button version. Not only do many USB to Serial chips neglect to break out the RTS pin, but it seems that through the history of the code, there has been some inconsistency in the behavior of these pins during programming which results in a different wiring scheme for different versions of the IDE.
+* Try different baud settings. There are multiple versions of the ESP8266. In particular, an older version defaults to communicating at 9600 baud instead of the more common 115200 baud.
+* Review the ESP8266 pin descriptions above and test each one with a multimeter to be sure that you have a high signal on the pins that need one for proper operation. (In particular, GPIO0, RST, CH_PD, and GPIO2.
+* If you haven’t been able to upload any code to the ESP8266 yet, try sending commands to the module via the serial monitor by selecting 115200 baud and CRLF line endings. Send the “AT” command and check for an “OK” response. Once you’ve uploaded code to the ESP8266, you’ll have overwritten the default firmware responsible for responding to these commands and will have to reinstate the default firmware using esptool before they will work again.
+* The Arduino IDE’s serial monitor seems to hold RTS low which will cause your ESP8266 to freeze in reset when you open the Arduino’s serial monitor. Needless to say, this can be extremely frustrating to work with and we suggest either using the buttons to avoid this problem or switching to a different serial terminal.
+
