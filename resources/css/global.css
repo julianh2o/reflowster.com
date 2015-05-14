@@ -48,9 +48,13 @@ h2.blog {
 
 .reflowster-ad .ordernow {
 	display: block;
-	position: absolute;
-	top: 124px;
-	left: 5px;
+	margin: 0 auto;
+	width: 100px;
+	position: relative;
+	margin-bottom: 5px;
+//	position: absolute;
+//	top: 124px;
+//	left: 5px;
 }
 
 
