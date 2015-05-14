@@ -54,6 +54,8 @@ The data pins on the basic ESP8266 are as follows:
 
 <img class="showcase" src="/resources/images/blog/esp8266/esppinout.png" />
 
+**Automatic (buttonless) Programming**
+
 If you have access to both the DTR and RTS pin on your serial connection, you can wire your ESP8266 for automatic programming (buttonless) as follows.
 
 ESP RX => SERIAL TX
@@ -74,7 +76,9 @@ ESP GPIO2 => 3V, or an LED with a high resistance pull-up resistor
 
 If you’re having trouble with the above configuration for whatever reason or don’t have access to all of those pins, wire for the manual approach below.
 
-If you have access to both the DTR and RTS pin on your serial connection, you can wire your ESP8266 for automatic programming (buttonless) as follows.
+**Manual Programming**
+
+If you DONT have access to the DTR and RTS pin on your serial connection, you can wire your ESP8266 for manual programming as follows.
 
 ESP RX => SERIAL TX
 
