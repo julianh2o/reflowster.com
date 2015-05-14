@@ -19,6 +19,42 @@ h2.blog {
 	background-color: #42ca8b;
 }
 
+.panel {
+	border: 1px solid #0084b4;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.reflowster-ad {
+	position: relative;
+	display: block;
+}
+
+.reflowster-ad img {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.reflowster-ad .head {
+	font-weight: bold;
+}
+
+.reflowster-ad .tagline {
+	font-size: 13px;
+	color: #0084b4;
+}
+
+.reflowster-ad .ordernow {
+	display: block;
+	position: absolute;
+	top: 124px;
+	left: 5px;
+}
+
+
+
 /* ====== media ====== */
 .media {margin:10px;}
 .media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
@@ -162,6 +198,12 @@ h2 a {
 
 h2 a:hover {
     color: black;
+}
+
+.note-text {
+	color: #0084b4;
+	font-size: 110%;
+	font-weight: bold;
 }
 
 .note {
