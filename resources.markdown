@@ -11,6 +11,7 @@ Resources
 ======================
 
 <ul>
+<li><a href="https://www.youtube.com/watch?v=vOosTYbOTZg">Reflowster Setup Video</a>
 <li><a href="reflowsterresources/manual.html">Reflowster Manual</a>
 <li><a href="reflowsterresources/reflowsolderingguide.html">Reflow Soldering Guide</a>
 <li><a href="https://github.com/Reflowster">Reflowster Github Organization</a>
