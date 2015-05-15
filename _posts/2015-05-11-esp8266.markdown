@@ -12,7 +12,7 @@ Connecting to the internet is often an extremely powerful way to extend or contr
 
 A ESP8266 will cost you between $3 and $6 depending on how long you’re willing to wait for it and lets you connect to the internet by issuing commands and requests through a simple but powerful serial interface. There are a number of simple tutorials out there to help you figure out how to set up basic communication with an ESP8266 using either a USB to Serial cable to try it out or to program an Arduino to connect to the internet.
 
-But wait, there’s more! Not only are these boards relatively easy to reprogram via USB, a recent Arduino fork allows you to program the ESP8266 directly from the Arduino IDE. Furthermore, it turns out that the ARM chip that’s the brains of the module is not only fast enough to handle all of the Wi-Fi communication, is fast enough to do so while still blowing just about every other Arduino board out of the water in terms of performance.
+But wait, there’s more! Not only are these boards relatively easy to reprogram via USB, a recent Arduino fork allows you to program the ESP8266 directly from the Arduino IDE. Furthermore, it turns out that the 80MHz LX3 chip that’s the brains of the module is not only fast enough to handle all of the Wi-Fi communication, is fast enough to do so while still blowing just about every other Arduino board out of the water in terms of performance.
 
 That’s right, you can get an Arduino-compatible microcontroller board that has Wi-Fi capabilities built in for as low as $3. Not only is this a steal compared to other Arduino boards, having Wi-Fi built in from the beginning opens a huge door for a myriad of “Internet of Things” projects.
 
