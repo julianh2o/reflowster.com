@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Reflowster is now available from Mint Tek in Ireland!"
+description: We're working with a new reseller in Ireland to help get Reflowster out into the world
+author: julian
+categories: news
+---
+
+<a href="http://mint-tek.com">
+<img src="http://mint-tek.mindunit.com/wp-content/uploads/2015/05/logo_mint-tek.png" />
+</a>
+
+Reflowster is teaming up with <a href="http://mint-tek.com/">Mint Tek Circuits</a> to make purchasing Reflowsters in Europe easier. Mint Tek will be selling Reflowsters on their <a href="http://mint-tek.com/reflowster/">web store</a> which will avoid prohibitive international shipping costs and delays.
+
+<!--more-->
+
+<a href="http://mint-tek.com/">Mint Tek Circuits</a> is an exciting startup in Ireland that's dedicated to bringing you quick and easy turn around for your PCB Prototyping needs. They do the legwork for hunting down a supplier and managing requirements. Furthermore, they've been active in the maker community by attending faires, aggregating maker-centered events, and blogging maker-relevant news.
+
+They put Reflowster to the test by soldering upwards of 50 PCBs in a single day at Maker Faire UK 2015. You can read all about their booth at the faire in the <a href="http://mint-tek.com/maker-faire-uk-2015/">blog post about it</a>.
+
+To get a quote on a prototype PCB, you can use their <a href="http://mint-tek.com/get-a-quote-now/">quote generation form.</a>
