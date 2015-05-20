@@ -1,0 +1,47 @@
+.pin {
+	margin-bottom: 3px;
+}
+
+.bubble {
+	background-color: #99CCFF;
+	padding: 0 3px;
+	width: 60px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.pinName {
+	background-color: #99CCFF;
+}
+
+.pinValue {
+	background-color: #c00;
+}
+
+.pinValue.ON {
+	background-color: #0f0;
+}
+
+.pinMode {
+	background-color: #c00;
+}
+
+.pinMode.ON {
+	background-color: #0f0;
+}
+
+.pinPullup {
+	background-color: #c00;
+}
+
+.pinPullup.ON {
+	background-color: #0f0;
+}
+
+.bubble.busy {
+	background-color: #ccc;
+}
+
+.toggle {
+	cursor: pointer;	
+}
