@@ -17,7 +17,7 @@ Many hobbyists avoid reflow soldering like the plague. Some have never heard abo
 Selecting components
 --------------------
 
-We've used DigiKey as our primary vendor for our surface mount parts, but there are a number of companies with a large selection of surface mount components. We tend to keep returning to DigiKey (www.digikey.com) because although austere, their site offers some very powerful searching and filtering tools that are simple and reliable. Another good choice for hunting down parts, especially if you're looking to get the best price for a single part is Octopart (octopart.com) which offers aggregate results from a number of vendors.
+We've used DigiKey as our primary vendor for our surface mount parts, but there are a number of companies with a large selection of surface mount components. We tend to keep returning to <a href="http://www.digikey.com">DigiKey</a> because although austere, their site offers some very powerful searching and filtering tools that are simple and reliable. Another good choice for hunting down parts, especially if you're looking to get the best price for a single part is Octopart (octopart.com) which offers aggregate results from a number of vendors.
 
 Most parts that you are used to getting in SIP, DIP, and other through-hole packages will also come in a variety of surface mount packages. In fact, there are some parts that can only be found in surface mount packaging. When selecting parts, you'll want to double check the land pattern recommended by the part and in particular, the package's pitch, or the spacing between the pins. If you get a part with too small of a pitch, you may have a hard time soldering it depending on what methods you are using and your skill and experience with the method. The SOIC package, which is large enough to be hand-soldered, might be a good choice for a beginner.
 
@@ -41,7 +41,7 @@ Once you've designed your circuit board and checked it thrice, it's time to get 
 
 Sometimes exporting Gerber files can be a little tricky, so we've been using a nifty program called "gerbv" (gerbv.sourceforge.net) to verify our Gerber and NC Drill files. It's lightweight and free, and it's a good sanity check to make sure all your layers are lined up.
 
-We've been using Seeed Studio (www.seeedstudio.com) for our circuit boards and have been very pleased with the quality and price of the circuit boards. They are, however, located in China and will often take a few weeks to arrive here in the US.
+We've been using <a href="http://www.seeedstudio.com/">Seeed Studio</a> for our circuit boards and have been very pleased with the quality and price of the circuit boards. They are, however, located in China and will often take a few weeks to arrive here in the US. A potential alternative, especially for Europe residents is <a href="http://mint-tek.com/">Mint Tek</a>.
 
 Regardless of which service you use, be sure to double check the manufacturer specifications for your chosen provider. Each manufacturer will have slightly different minimum trace, silkscreen, and hole sizes. Usually getting this wrong simply means that they'll email you asking for a resubmission that fits the constraints.
 
