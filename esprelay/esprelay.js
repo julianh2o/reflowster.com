@@ -1,4 +1,4 @@
-disable = true;
+disable = false;
 
 setTimeout(function() { //disable constant reloading of page
 	if (!disable) window.reload = false;	
@@ -28,10 +28,15 @@ function handleClick() {
 function createPin(key,name) {
 	var $pin = $("<div class='pin' />");
 	$pin.data("key",key)
-	$pin.append($("<span class='pinName bubble'></span>").text(name));
-	$pin.append($("<span data-action='mode' class='pinMode bubble toggle'></span>").click(handleClick));
-	$pin.append($("<span data-action='set' class='pinValue bubble toggle'></span>").click(handleClick));
-	$pin.append($("<span data-action='pullup' class='pinPullup bubble toggle'></span>").click(handleClick));
+	if (key.startsWith("io")) {
+		$pin.append($("<span class='pinName bubble'></span>").text(name));
+		$pin.append($("<span data-action='mode' class='pinMode bubble toggle'></span>").click(handleClick));
+		$pin.append($("<span data-action='set' class='pinValue bubble toggle'></span>").click(handleClick));
+		$pin.append($("<span data-action='pullup' class='pinPullup bubble toggle'></span>").click(handleClick));
+	} else if (key.startsWith("adc")){
+		$pin.append($("<span class='pinName bubble'></span>").text(name));
+		$pin.append($("<span class='pinValue adc'></span>"));
+	}
 	
 	return $pin;
 }
@@ -41,10 +46,9 @@ var pinData = {};
 function updatePin($el) {
 	var key = $el.data("key");
 	var keyParts = key.split(" ");
+	var info = pinData[keyParts[0]][keyParts[1]];
+	$el.data("info",info);
 	if (key.startsWith("io")) {
-		var info = pinData[keyParts[0]][keyParts[1]];
-		$el.data("info",info);
-		
 		$el.find(".pinMode").data("value",info["pinMode"])
 			.text(info["pinMode"] == 1 ? "OUT" : "IN")
 			.toggleClass("ON",info["pinMode"] == 1);
@@ -62,7 +66,7 @@ function updatePin($el) {
 			.toggle(info["pinMode"] == 0);
 		
 	} else if (key.startsWith("adc")) {
-		
+		$el.find(".pinValue").text(info.pinValue);
 	}
 }
 
@@ -95,7 +99,7 @@ function updateValues() {
 }
 
 function main() {
-	//$(document.body).empty();
+	$(document.body).empty();
 	
 	var $el = $("<div />");
 	$(document.body).prepend($el);
@@ -105,7 +109,13 @@ function main() {
 		$el.append($pin);
 	}
 	
-	loadPinData();
+	for (var i=0; i<7; i++) {
+		var name = "ADC "+i;
+		var $pin = createPin("adc "+i,name);
+		$el.append($pin);
+	}
+	
+	setInterval(loadPinData,500);
 	
 	$("a").click(function() {
 		console.log("clicked");
