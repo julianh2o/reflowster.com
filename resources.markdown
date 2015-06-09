@@ -18,4 +18,4 @@ Resources
 <li><a href="reflowsterresources/reflowster_function_overview.pdf">Reflowster Firmware Function Overview</a>
 <li><a href="reflowsterresources/BOM.pdf">Reflowster 201b Bill of Materials</a>
 <li><a href="reflowsterresources/reflowster_201b_gerber.zip">Reflowster 201b Gerber Files</a>
-<li><a href="reflowsterresources/reflowster_201b_schematic.pdf">Reflowster 201b Schematic Files</a>
+<li><a href="reflowsterresources/reflowster_201b_schematic.pdf">Reflowster 201b Schematic</a>
