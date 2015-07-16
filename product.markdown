@@ -92,8 +92,6 @@ Toaster Oven Compatibility
 --------------------------
 Reflowster does need to be paired with a toaster oven to work, but unlike many DIY solutions Reflowster requires NO toaster modification.  No need to cut cables or risk electrocution!  
 
-<img alt="This is an older version of Reflowster with a plug directly on the unit" class="showcase" src="/resources/images/reflowster.jpg" />
-
 Reflowster may not work perfectly with every toaster oven, but we've found that smaller, cheaper ovens typically work great because they allow for faster changes in temperature. Most simple toaster ovens without digital controls will work. In particular, a toaster that can be stuck in the "on" position is required. This state needs to persist through a power cycle. Most toasters do this by turning the timer knob backwards.
 
 <img alt="Reflowster is compatible with any standard toaster oven that can be stuck in the on position through a power cycle" class="showcase" src="/resources/images/toaster.png" />
