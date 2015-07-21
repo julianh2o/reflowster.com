@@ -8,7 +8,11 @@ categories: news
 
 Amazon Echo is the Siri for your home. Named "Alexa", she sits in your living room and listens for her name followed by a command. As a new device, her default functionality is limited to managing todo and shopping lists, playing music on Pandora or TuneIn radio, and controlling a few of the Phillips Hue and Belkin WeMo smart lights and devices.
 
-The power and value of the Amazon Echo is not, however, from it's default functionality. Amazon has recently opened the Echo up for developers through the <a href="https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit">Alexa Skills Kit.</a>. Using this, anyone can add their own functionality to Alexa, allowing you to control anything with your voice alone.
+The power and value of the Amazon Echo is not, however, from it's default functionality. Amazon has recently opened the Echo up for developers through the <a href="https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit">Alexa Skills Kit</a>. Using this, anyone can add their own functionality to Alexa, allowing you to control anything with your voice alone.
+
+<div style="text-align: center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fcn1gUd7Tbw" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <!--more-->
 
@@ -155,4 +159,9 @@ As mentioned earlier, the biggest thing that is omitted from this code is some s
 
 Next up on deck may be to add some more functionality. This proof of concept only has 4 different actions that it can perform. In many cases, this is enough, but you may find that there are other things you do on your Roku that are not covered. Support for other channels could be added, or even just support for navigating through episodes and seasons.
 
-If you do think of any other cool modifications or improvements, feel free to fork the project on Github and make pull requests. I'll try to take a look at all requests that come in!
+If you do think of any other cool modifications or improvements, feel free to fork the <a href="https://github.com/julianh2o/RokuAlexaLambdaSkill">project on Github</a> and make pull requests. I'll try to take a look at all requests that come in!
+
+
+<hr/>
+
+If you liked this, check out the post on <a href="http://reflowster.com/blog/2015/05/11/esp8266.html">The internet of things and the ESP8266</a> a powerful little Wi-fi module that lets you connect your electronics projects to the internet for control via smart phone or Alexa!
