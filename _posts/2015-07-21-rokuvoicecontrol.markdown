@@ -3,7 +3,7 @@ layout: post
 title:  "Controlling your Roku with a voice interface (via Amazon Echo)"
 description: Using the Alexa Skills Kit and the Amazon Echo, we are able to control the Roku with nothing but a vocal command.
 author: julian
-categories: news
+categories: blog
 ---
 
 Amazon Echo is the Siri for your home. Named "Alexa", she sits in your living room and listens for her name followed by a command. As a new device, her default functionality is limited to managing todo and shopping lists, playing music on Pandora or TuneIn radio, and controlling a few of the Phillips Hue and Belkin WeMo smart lights and devices.
