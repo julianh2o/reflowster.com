@@ -71,7 +71,7 @@ Once we have the endpoint url of the Roku, it's fairly straight forward to send 
         /keypress/Play   //The play/pause button will start or stop the active show
         /keypress/Lit_* (where * is a letter) //types into the currently active text field
 
-Through a bit of trial and error, it was fairly easy to come up with a sequence of keypresses to get to various parts of the Netflix channel. In order to make sure that the Netflix channel is in a predictable state, we always return to the home screen before trying to perform any action. This is unfortunately a little timeconsuming, but without a way of retrieving state information from the Rokue, we don't really have any better options.
+Through a bit of trial and error, it was fairly easy to come up with a sequence of keypresses to get to various parts of the Netflix channel. In order to make sure that the Netflix channel is in a predictable state, we always return to the home screen before trying to perform any action. This is unfortunately a little timeconsuming, but without a way of retrieving state information from the Roku, we don't really have any better options.
 
 Here is the snippet that performs the "search and play" action. First we navigate to the search window, then we generate the sequence of keyboard presses for our desired show, and then we perform the search, select the resulting show, and play. You can find the implementation for these helper methods in the full code listing.
 
