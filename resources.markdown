@@ -14,6 +14,7 @@ Resources
 <li><a href="https://www.youtube.com/watch?v=vOosTYbOTZg">Reflowster Setup Video</a>
 <li><a href="reflowsterresources/manual.html">Reflowster Manual</a>
 <li><a href="reflowsterresources/reflowsolderingguide.html">Reflow Soldering Guide</a>
+<li><a href="reflowsterresources/ReflowsterPendantKit.pdf">Blinking LED Pendant kit instructions</a>
 <li><a href="https://github.com/Reflowster">Reflowster Github Organization</a>
 <li><a href="reflowsterresources/reflowster_function_overview.pdf">Reflowster Firmware Function Overview</a>
 <li><a href="reflowsterresources/BOM.pdf">Reflowster 201b Bill of Materials</a>
