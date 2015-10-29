@@ -19,7 +19,7 @@ author: Julian Hartline
 </p>
 
 <br/>
-{% for post in site.posts %}
+{% for post in site.posts limit:5 %}
 	{% if post.categories contains 'news' %}
 		<h2>{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></h2>
 		{{ post.excerpt }}
@@ -36,3 +36,10 @@ author: Julian Hartline
 		<br/>
 	{% endif %}
 {% endfor %}
+
+<div style='text-align: center;'>
+    <a href="/blog.html">See more posts..</a>
+</div>
+
+<br/>
+<br/>
