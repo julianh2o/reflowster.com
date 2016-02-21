@@ -226,7 +226,8 @@ h2 a:hover {
 	overflow: hidden;
     left: 0px;
     right: 0px;
-    background-image: url('/resources/images/reflowster_splash.jpg');
+    background-image: url('/resources/images/smallersplash.jpg');
+    background-size: 1400px 600px;
     height: 400px;
     
     margin: 0;
