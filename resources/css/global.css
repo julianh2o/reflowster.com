@@ -25,28 +25,42 @@ h2.blog {
 	padding: 5px;
 }
 
-.reflowster-ad {
+.sidebar-panel {
 	position: relative;
 	display: block;
 }
 
-.reflowster-ad img {
+.sidebar-panel img {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 }
 
-.reflowster-ad .head {
+.sidebar-panel img.wide {
+	width: 100%;
+}
+
+img.rounded {
+	border-radius: 5px;
+}
+
+.sidebar-panel .head {
 	font-weight: bold;
 }
 
-.reflowster-ad .tagline {
+.sidebar-panel .tagline {
 	font-size: 13px;
 	color: #0084b4;
 }
 
-.reflowster-ad .ordernow {
+.sidebar-panel .tagline_black {
+	font-size: 13px;
+	color: #000;
+	font-weight: bold;
+}
+
+.sidebar-panel .actionbutton {
 	display: block;
 	margin: 0 auto;
 	width: 100px;
@@ -282,7 +296,7 @@ h2 a:hover {
 	display: inline-block;
 }
 
-.ordernow {
+.actionbutton {
 	display: inline-block;
 	border: none;
 	border-radius: 4px;
@@ -294,7 +308,7 @@ h2 a:hover {
 	text-decoration: none;
 }
 
-.ordernow:hover {
+.actionbutton:hover {
 	background-color: #356FA2;
 	text-decoration: none;
 	color: white;
