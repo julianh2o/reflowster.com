@@ -46,7 +46,7 @@ Hello World
 -----------
 For the obligatory "Hello World" and for a convenient method of debugging your more complicated ULPs, we'll need a way of writing text from our ULP. EAGLE ULPs don't run with a console that we can output text to, but they do provide the output function and block that will enable the printf command for writing to text files.
 
-	output("/tmp/ulp_output.txt") {
+	output("/tmp/ulp_output.txt","at") {
 		printf("Hello World\n");
 	}
 
@@ -71,7 +71,7 @@ You can test this out by copying and pasting it into the EAGLE command window an
 
 Here is a ULP that generates a box centered at the origin when provided with the length and the width. Below, I'll go through the program line by line.
 
-    output("/tmp/ulp_output.txt") {
+    output("/tmp/ulp_output.txt","at") {
         if (argc != 5 && argc != 3) {
             dlgMessageBox("Incorrect number of arguments","Ok");
             exit(1);
@@ -88,21 +88,22 @@ Here is a ULP that generates a box centered at the origin when provided with the
             y = strtod(argv[4]);
         }
 
-	string s = "";
-        sprintf(s,"WIRE (%f %f) (%f %f) (%f %f) (%f %f) (%f %f);",
-            x+width/2.0,y+height/2.0,
-            x+width/2.0,y-height/2.0,
-            x-width/2.0,y-height/2.0,
-            x-width/2.0,y+height/2.0,
-            x+width/2.0,y+height/2.0
-        );
+        string s = "";
+            sprintf(s,"WIRE (%f %f) (%f %f) (%f %f) (%f %f) (%f %f);",
+                x+width/2.0,y+height/2.0,
+                x+width/2.0,y-height/2.0,
+                x-width/2.0,y-height/2.0,
+                x-width/2.0,y+height/2.0,
+                x+width/2.0,y+height/2.0
+            );
+
+        exit(s);
     }
 
-    exit(s);
 
-To execute this program, you need to provide the length and width as arguments. I've placed this code into a ULP file called "box.ulp". To create a 2x2 box centered at the origin, you'd run *run box 2 2*.
+To execute this program, you need to provide the length and width as arguments. I've placed this code into a ULP file called "box.ulp". To create a 2x2 box centered at the origin, you'd use `run box 2 2`.
 
-    output("/tmp/ulp_output.txt") {
+    output("/tmp/ulp_output.txt","at") {
 
 You've already seen this line, and the astute among you will note that this output block contains no printf statements. This line is actually completely unnecessary in the program as it stands. However, when I was working on this program, it was useful to have access to debugging output. If I ever go back to enhance this program, I may need that debugging output again, so I've left it here.
 
@@ -117,7 +118,7 @@ This section of code will make sense to anyone who's programmed in C before. *ar
         real height = strtod(argv[2]);
 
 
-The first two arguments are the length and width respectively. We use the ULP function *strtod* to convert the string argument to a decimal value using the type *real*.
+The first two arguments are the length and width respectively. We use the ULP function *strtod* to convert the string argument to a numerical one of type *real*.
 
         real x = 0;
         real y = 0;
