@@ -129,7 +129,7 @@ The first two arguments are the length and width respectively. We use the ULP fu
 
 The default position for the box is at the origin, but two optional arguments let you specify the center of the box. Again, we use *strtod* to convert the string into a real.
 
-	string s = "";
+        string s = "";
         sprintf(s,"WIRE (%f %f) (%f %f) (%f %f) (%f %f) (%f %f);",
             x+width/2.0,y+height/2.0,
             x+width/2.0,y-height/2.0,
@@ -140,7 +140,7 @@ The default position for the box is at the origin, but two optional arguments le
 
 This piece of code is responsible for generating the EAGLE commands to create our box. The bulk of this is just mathematical construction of the box vertices based on the width, height, and position. More importantly, we're using the *sprintf* function to format our command and store it into the *s* variable. The *sprintf* function takes the destination variable, the format string, and then as many input variables as there are format specifiers. We're using the format specifier *%f* which accepts the real type. You can find more information about format specifiers and the printf and sprintf functions on page 89 of the ULP manual.
 
-	exit(s);
+        exit(s);
 
 Lastly, we're exiting with the value s to terminate our ULP and execute the command that we've generated.
 
